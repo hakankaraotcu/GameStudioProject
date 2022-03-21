@@ -12,7 +12,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask ground;
     [SerializeField] private float speed = 8f;
     [SerializeField] private float jumpForce = 14f;
-    private enum State { idle, running, jumping, falling, rolling };
+    [SerializeField] private float hurtForce = 7f;
+    private enum State { idle, running, jumping, falling, rolling, hurt};
     private State state = State.idle;
 
     // Start is called before the first frame update
@@ -26,7 +27,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        Movement();
+        if(state != State.hurt)
+        {
+            Movement();
+        }
         AnimState();
         anim.SetInteger("state", (int)state);
     }
@@ -62,9 +66,46 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Enemy")
+        {
+            state = State.hurt;
+            if(collision.gameObject.transform.position.x > transform.position.x)
+            {
+                if (coll.IsTouchingLayers(ground))
+                {
+                    rb.velocity = new Vector2(-hurtForce, rb.velocity.y);
+                }
+                else
+                {
+                    rb.velocity = new Vector2(-hurtForce, 10f);
+                }
+            }
+            else
+            {
+                if (coll.IsTouchingLayers(ground))
+                {
+                    rb.velocity = new Vector2(hurtForce, rb.velocity.y);
+                }
+                else
+                {
+                    rb.velocity = new Vector2(hurtForce, 10f);
+                }
+            }
+        }
+    }
+
     private void AnimState()
     {
-        if (state == State.jumping)
+        if(state == State.hurt)
+        {
+            if(Mathf.Abs(rb.velocity.x) < .1f)
+            {
+                state = State.idle;
+            }
+        }
+        else if (state == State.jumping)
         {
             if (rb.velocity.y < 0.1f)
             {
