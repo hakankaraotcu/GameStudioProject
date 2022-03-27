@@ -5,15 +5,25 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private Animator anim;
+    [SerializeField] private Animator anim;
     private Collider2D coll;
     public int healthPotion;
     private Vector2 moveDir;
+    [SerializeField] private Transform attackPoint;
+    [SerializeField] private LayerMask enemyLayers;
     [SerializeField] private LayerMask ground;
+    [SerializeField] private int maxhealth = 1000;
+    [SerializeField] private int currentHealth;
+    [SerializeField] private int previousHealth;
     [SerializeField] private float speed = 8f;
     [SerializeField] private float jumpForce = 14f;
     [SerializeField] private float hurtForce = 7f;
-    private enum State { idle, running, jumping, falling, rolling, hurt};
+    [SerializeField] private int damage = 40;
+    [SerializeField] private int getDamage = 0;
+    [SerializeField] private float attackRate = 2f;
+    [SerializeField] private float attackRange = 0.5f;
+    [SerializeField] private float nextAttackTime = 0f;
+    private enum State { idle, running, jumping, falling, rolling};
     private State state = State.idle;
 
     // Start is called before the first frame update
@@ -22,15 +32,18 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
+        currentHealth = maxhealth;
+        previousHealth = currentHealth;
     }
 
     // Update is called once per frame
     private void Update()
     {
-        if(state != State.hurt)
+        if((Time.time >= nextAttackTime) && (state == State.idle || state == State.running || state == State.jumping || state == State.falling))
         {
             Movement();
         }
+        
         AnimState();
         anim.SetInteger("state", (int)state);
     }
@@ -55,6 +68,37 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             state = State.jumping;
         }
+
+        else if (Time.time >= nextAttackTime && state == State.idle || state == State.running)
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                Attack();
+                nextAttackTime = Time.time + 1f / attackRate;
+            }
+        }
+    }
+
+    public void Attack()
+    {
+        anim.SetTrigger("attack");
+
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            enemy.GetComponent<Skeleton>().TakeDamage(damage);
+        }
+    }
+
+    public void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null)
+        {
+            return;
+        }
+
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -66,12 +110,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if(collision.gameObject.tag == "Enemy")
+        if(other.gameObject.tag == "Enemy")
         {
-            state = State.hurt;
-            if(collision.gameObject.transform.position.x > transform.position.x)
+            anim.SetTrigger("hurt");
+
+            if(other.gameObject.transform.position.x > transform.position.x)
             {
                 if (coll.IsTouchingLayers(ground))
                 {
@@ -98,14 +143,7 @@ public class PlayerController : MonoBehaviour
 
     private void AnimState()
     {
-        if(state == State.hurt)
-        {
-            if(Mathf.Abs(rb.velocity.x) < .1f)
-            {
-                state = State.idle;
-            }
-        }
-        else if (state == State.jumping)
+        if (state == State.jumping)
         {
             if (rb.velocity.y < 0.1f)
             {
@@ -123,9 +161,31 @@ public class PlayerController : MonoBehaviour
         {
             state = State.running;
         }
+        else if (state == State.idle)
+        {
+            if (!coll.IsTouchingLayers(ground))
+            {
+                state = State.falling;
+            }
+        }
         else
         {
             state = State.idle;
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        previousHealth = currentHealth;
+        getDamage = damage;
+        currentHealth -= getDamage;
+
+        anim.SetTrigger("hurt");
+
+        if (currentHealth <= 0)
+        {
+            Debug.Log("died");
+            anim.SetBool("isDead", true);
         }
     }
 }

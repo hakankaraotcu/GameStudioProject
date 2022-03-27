@@ -23,7 +23,6 @@ public class PlayerCombat : MonoBehaviour
                 nextAttackTime = Time.time + 1f / attackRate;
             }
         }
-        
     }
 
     public void Attack()
@@ -34,7 +33,7 @@ public class PlayerCombat : MonoBehaviour
 
         foreach(Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<Enemy>().TakeDamage(damage);
+            enemy.GetComponent<Skeleton>().TakeDamage(damage);
         }
     }
     

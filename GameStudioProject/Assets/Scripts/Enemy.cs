@@ -1,83 +1,141 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private int maxhealth = 100;
-    [SerializeField] private int currentHealth;
-    [SerializeField] private float wayPointLeft;
-    [SerializeField] private float wayPointRight;
-    [SerializeField] private float walkLength = 10f;
-    private Animator anim;
-    private Rigidbody2D rb;
-    public bool facingLeft = true;
+    [SerializeField] protected Animator anim;
+    protected Rigidbody2D rb;
+
+    [Header("Pathfinding")]
+    public Transform target;
+    public float activateDistance = 50f;
+    public float pathUpdateSeconds = 0.5f;
+
+    [Header("Physics")]
+    public float speed = 10f;
+    public float nextWaypointDistance = 3f;
+
+    [Header("Custom Behavior")]
+    public bool followEnabled = true;
+    public bool directionLookEnabled = true;
+
+    private Path path;
+    private int currentWaypoint = 0;
+
+    public Transform attackPoint;
+    public float attackRange = 0.5f;
+    [SerializeField] protected LayerMask hitEnemyLayers;
+    public int damage = 40;
+    public float attackRate = 2f;
+    public float nextAttackTime = 0f;
+
+    Seeker seeker;
 
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
-        currentHealth = maxhealth;
         anim = GetComponent<Animator>();
+        seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
+
+        InvokeRepeating("UpdatePath", 0f, pathUpdateSeconds);
+
+        seeker.StartPath(rb.position, target.position, OnPathComplete);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void UpdatePath()
     {
-        if (anim.GetBool("isWalking"))
+        if (followEnabled && TargetInDistance() && seeker.IsDone())
         {
-            Movement();
+            seeker.StartPath(rb.position, target.position, OnPathComplete);
         }
     }
 
-    private void Movement()
+    public void PathFollow()
     {
-        if (facingLeft)
+        if (path == null)
         {
-            if (transform.position.x > wayPointLeft)
+            return;
+        }
+
+        if (currentWaypoint >= path.vectorPath.Count)
+        {
+            return;
+        }
+
+        float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
+
+        if (distance < nextWaypointDistance)
+        {
+            currentWaypoint++;
+        }
+
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, hitEnemyLayers);
+
+        if(hitEnemies.Length == 1)
+        {
+            Attack();
+        }
+        else
+        {
+            if (transform.position.x > target.position.x)
             {
                 if (transform.localScale.x != -3)
                 {
                     transform.localScale = new Vector3(-3, 3);
                 }
-                rb.velocity = new Vector2(-walkLength, rb.velocity.y);
-                anim.SetBool("isWalking", true);
+                rb.velocity = new Vector2(-speed, rb.velocity.y);
             }
-            else
-            {
-                facingLeft = false;
-                anim.SetBool("isWalking", false);
-            }
-        }
-        else
-        {
-            if (transform.position.x < wayPointRight)
+            else if (transform.position.x < target.position.x)
             {
                 if (transform.localScale.x != 3)
                 {
                     transform.localScale = new Vector3(3, 3);
                 }
-                rb.velocity = new Vector2(walkLength, rb.velocity.y);
-                anim.SetBool("isWalking", true);
-            }
-            else
-            {
-                facingLeft = true;
-                anim.SetBool("isWalking", false);
+                rb.velocity = new Vector2(speed, rb.velocity.y);
             }
         }
     }
 
-    public void TakeDamage(int damage)
+    public bool TargetInDistance()
     {
-        currentHealth -= damage;
+        return Vector2.Distance(transform.position, target.transform.position) < activateDistance;
+    }
 
-        anim.SetTrigger("hurt");
-
-        if (currentHealth <= 0)
+    private void OnPathComplete(Path p)
+    {
+        if (!p.error)
         {
-            Die();
+            path = p;
+            currentWaypoint = 0;
         }
+    }
+
+    public void Attack()
+    {
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, hitEnemyLayers);
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            if(Time.time >= nextAttackTime)
+            {
+                anim.SetTrigger("attack");
+                nextAttackTime = Time.time + 1f / attackRate;
+                enemy.GetComponent<PlayerController>().TakeDamage(damage);
+            }
+        }
+    }
+
+    public void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null)
+        {
+            return;
+        }
+
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 
     public void Die()
@@ -89,6 +147,5 @@ public class Enemy : MonoBehaviour
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
-
     }
 }
