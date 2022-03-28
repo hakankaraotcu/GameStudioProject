@@ -76,7 +76,11 @@ public class Enemy : MonoBehaviour
 
         if(hitEnemies.Length == 1)
         {
-            Attack();
+            if (Time.time >= nextAttackTime)
+            {
+                anim.SetTrigger("attack");
+                nextAttackTime = Time.time + 1f / attackRate;
+            }
         }
         else
         {
@@ -121,8 +125,6 @@ public class Enemy : MonoBehaviour
         {
             if(Time.time >= nextAttackTime)
             {
-                anim.SetTrigger("attack");
-                nextAttackTime = Time.time + 1f / attackRate;
                 enemy.GetComponent<PlayerController>().TakeDamage(damage);
             }
         }

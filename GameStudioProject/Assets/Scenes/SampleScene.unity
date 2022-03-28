@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &227405398 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7217991120405855477, guid: 03d352ce010fe47408ea5cdc54d7af21, type: 3}
+  m_PrefabInstance: {fileID: 7217991119055214592}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd918272364a444eb6d34c31afc85be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -6074,6 +6085,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3892227271300456393, guid: 007518d81b1efd84aa37f5da77ccfb3b, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 227405398}
+    - target: {fileID: 3892227271300456393, guid: 007518d81b1efd84aa37f5da77ccfb3b, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 721516510}
@@ -6083,7 +6098,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3892227271300456393, guid: 007518d81b1efd84aa37f5da77ccfb3b, type: 3}
       propertyPath: attackRate
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3892227271300456393, guid: 007518d81b1efd84aa37f5da77ccfb3b, type: 3}
       propertyPath: followArea
@@ -6156,6 +6171,14 @@ PrefabInstance:
     - target: {fileID: 3892227271300456395, guid: 007518d81b1efd84aa37f5da77ccfb3b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3892227271300456397, guid: 007518d81b1efd84aa37f5da77ccfb3b, type: 3}
+      propertyPath: m_Size.x
+      value: 0.21408717
+      objectReference: {fileID: 0}
+    - target: {fileID: 3892227271300456397, guid: 007518d81b1efd84aa37f5da77ccfb3b, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.046026774
       objectReference: {fileID: 0}
     - target: {fileID: 3892227271300456398, guid: 007518d81b1efd84aa37f5da77ccfb3b, type: 3}
       propertyPath: m_BodyType
@@ -6255,8 +6278,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1195591278}
     - target: {fileID: 7217991120405855477, guid: 03d352ce010fe47408ea5cdc54d7af21, type: 3}
+      propertyPath: dashForce
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7217991120405855477, guid: 03d352ce010fe47408ea5cdc54d7af21, type: 3}
       propertyPath: maxhealth
       value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7217991120405855477, guid: 03d352ce010fe47408ea5cdc54d7af21, type: 3}
+      propertyPath: rollSpeed
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 7217991120405855477, guid: 03d352ce010fe47408ea5cdc54d7af21, type: 3}
       propertyPath: attackRate
@@ -6271,12 +6302,24 @@ PrefabInstance:
       value: 0.68
       objectReference: {fileID: 0}
     - target: {fileID: 7217991120405855477, guid: 03d352ce010fe47408ea5cdc54d7af21, type: 3}
+      propertyPath: startDashTimer
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7217991120405855477, guid: 03d352ce010fe47408ea5cdc54d7af21, type: 3}
       propertyPath: enemyLayers.m_Bits
       value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 7217991120405855478, guid: 03d352ce010fe47408ea5cdc54d7af21, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7217991120405855479, guid: 03d352ce010fe47408ea5cdc54d7af21, type: 3}
       propertyPath: m_Size.y
       value: 0.5164068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7217991120405855479, guid: 03d352ce010fe47408ea5cdc54d7af21, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7217991120405855479, guid: 03d352ce010fe47408ea5cdc54d7af21, type: 3}
       propertyPath: m_Offset.y

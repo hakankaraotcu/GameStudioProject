@@ -23,6 +23,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float attackRate = 2f;
     [SerializeField] private float attackRange = 0.5f;
     [SerializeField] private float nextAttackTime = 0f;
+    [SerializeField] private float dashForce;
+    [SerializeField] private float startDashTimer;
+    [SerializeField] private float currentDashTimer;
+    [SerializeField] private float dashDirection;
+    private bool isDashing;
+    private float rollDir;
+    private float dirX;
     private enum State { idle, running, jumping, falling, rolling};
     private State state = State.idle;
 
@@ -39,7 +46,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if((Time.time >= nextAttackTime) && (state == State.idle || state == State.running || state == State.jumping || state == State.falling))
+        if((Time.time >= nextAttackTime) && (state == State.idle || state == State.running || state == State.jumping || state == State.falling || state == State.rolling))
         {
             Movement();
         }
@@ -50,7 +57,7 @@ public class PlayerController : MonoBehaviour
 
     private void Movement()
     {
-        float dirX = Input.GetAxisRaw("Horizontal");
+        dirX = Input.GetAxisRaw("Horizontal");
         moveDir = new Vector2(dirX * speed, rb.velocity.y);
         rb.velocity = moveDir;
 
@@ -62,13 +69,37 @@ public class PlayerController : MonoBehaviour
         {
             transform.localScale = new Vector2(3, 3);
         }
-
+        if(dirX != 0)
+        {
+            rollDir = dirX;
+        }
+        if(Input.GetKeyDown(KeyCode.LeftControl) && coll.IsTouchingLayers(ground))
+        {
+            isDashing = true;
+            currentDashTimer = startDashTimer;
+            rb.velocity = Vector2.zero;
+            if(dirX != 0)
+            {
+                dashDirection = dirX;
+            }
+            else
+            {
+                dashDirection = rollDir;
+            }
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            rb.constraints = RigidbodyConstraints2D.FreezePositionY;
+        }
         if (Input.GetButtonDown("Jump") && coll.IsTouchingLayers(ground))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             state = State.jumping;
+            isDashing = false;
         }
-
+        if (isDashing)
+        {
+            state = State.rolling;
+            rb.velocity = transform.right * dashDirection * dashForce;
+        }
         else if (Time.time >= nextAttackTime && state == State.idle || state == State.running)
         {
             if (Input.GetKeyDown(KeyCode.F))
@@ -150,6 +181,29 @@ public class PlayerController : MonoBehaviour
                 state = State.falling;
             }
         }
+        else if(state == State.rolling)
+        {
+            currentDashTimer -= Time.deltaTime;
+            if (currentDashTimer <= 0)
+            {
+                isDashing = false;
+                if(dirX != 0)
+                {
+                    state = State.running;
+                    gameObject.GetComponent<BoxCollider2D>().enabled = true;
+                    rb.constraints = RigidbodyConstraints2D.None;
+                    rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                }
+                else
+                {
+                    state = State.idle;
+                    gameObject.GetComponent<BoxCollider2D>().enabled = true;
+                    rb.constraints = RigidbodyConstraints2D.None;
+                    rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                }
+            }
+            
+        }
         else if (state == State.falling)
         {
             if (coll.IsTouchingLayers(ground))
@@ -186,6 +240,8 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("died");
             anim.SetBool("isDead", true);
+            GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+            GetComponent<Collider2D>().enabled = false;
         }
     }
 }
