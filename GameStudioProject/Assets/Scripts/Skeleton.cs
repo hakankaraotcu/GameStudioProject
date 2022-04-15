@@ -79,13 +79,16 @@ public class Skeleton : Enemy
     }
     public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
-
-        anim.SetTrigger("hurt");
-
-        if (currentHealth <= 0)
+        if (!isAttacking)
         {
-            Die();
+            currentHealth -= damage;
+
+            anim.SetTrigger("hurt");
+
+            if (currentHealth <= 0)
+            {
+                Die();
+            }
         }
     }
 

@@ -29,7 +29,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected LayerMask hitEnemyLayers;
     public int damage = 40;
     public float attackRate = 2f;
-    public float nextAttackTime = 0f;
+    protected float nextAttackTime = 0f;
+    protected bool isAttacking;
 
     Seeker seeker;
 
@@ -78,19 +79,27 @@ public class Enemy : MonoBehaviour
         {
             if (Time.time >= nextAttackTime)
             {
+                isAttacking = true;
+                anim.SetBool("isWalking", false);
                 anim.SetTrigger("attack");
                 nextAttackTime = Time.time + 1f / attackRate;
             }
         }
-        else
+        else if(Time.time >= nextAttackTime)
         {
+            anim.SetBool("isWalking", true);
+
             if (transform.position.x > target.position.x)
             {
                 if (transform.localScale.x != -3)
                 {
                     transform.localScale = new Vector3(-3, 3);
                 }
-                rb.velocity = new Vector2(-speed, rb.velocity.y);
+                Collider2D[] enemyRotation = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, hitEnemyLayers);
+                if (enemyRotation.Length != 1)
+                {
+                    rb.velocity = new Vector2(-speed, rb.velocity.y);
+                }
             }
             else if (transform.position.x < target.position.x)
             {
@@ -98,7 +107,11 @@ public class Enemy : MonoBehaviour
                 {
                     transform.localScale = new Vector3(3, 3);
                 }
-                rb.velocity = new Vector2(speed, rb.velocity.y);
+                Collider2D[] enemyRotation = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, hitEnemyLayers);
+                if (enemyRotation.Length != 1)
+                {
+                    rb.velocity = new Vector2(speed, rb.velocity.y);
+                }
             }
         }
     }
@@ -128,6 +141,7 @@ public class Enemy : MonoBehaviour
                 enemy.GetComponent<PlayerController>().TakeDamage(damage);
             }
         }
+        isAttacking = false;
     }
 
     public void OnDrawGizmosSelected()
