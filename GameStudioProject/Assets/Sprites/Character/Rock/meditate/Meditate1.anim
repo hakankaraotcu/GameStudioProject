@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Meditate1
+  serializedVersion: 6
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves: []
+  m_PPtrCurves:
+  - curve:
+    - time: 0
+      value: {fileID: 6739207618958160763, guid: eec2d6125b8165f4392caad1150695ba, type: 3}
+    - time: 0.083333336
+      value: {fileID: 3699242636410795576, guid: 38cb1f869e8f763498d8d2e818d584d4, type: 3}
+    - time: 0.16666667
+      value: {fileID: 7013207828023572277, guid: eb11138ac991f624d90f0871d6d09e5c, type: 3}
+    - time: 0.25
+      value: {fileID: -3504410381849656297, guid: 841cb81f1e18d9d41a45123d7c0cefa5, type: 3}
+    - time: 0.33333334
+      value: {fileID: -2019035764595751983, guid: df66f4715e7fe3f45a9a6d60dcf79988, type: 3}
+    attribute: m_Sprite
+    path: 
+    classID: 212
+    script: {fileID: 0}
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings:
+    - serializedVersion: 2
+      path: 0
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+    pptrCurveMapping:
+    - {fileID: 6739207618958160763, guid: eec2d6125b8165f4392caad1150695ba, type: 3}
+    - {fileID: 3699242636410795576, guid: 38cb1f869e8f763498d8d2e818d584d4, type: 3}
+    - {fileID: 7013207828023572277, guid: eb11138ac991f624d90f0871d6d09e5c, type: 3}
+    - {fileID: -3504410381849656297, guid: 841cb81f1e18d9d41a45123d7c0cefa5, type: 3}
+    - {fileID: -2019035764595751983, guid: df66f4715e7fe3f45a9a6d60dcf79988, type: 3}
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 0.35000002
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_Events: []

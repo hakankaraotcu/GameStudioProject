@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Pathfinding;
 
 public class Enemy : MonoBehaviour
@@ -31,6 +32,7 @@ public class Enemy : MonoBehaviour
     public float attackRate = 2f;
     protected float nextAttackTime = 0f;
     protected bool isAttacking;
+    [SerializeField]protected Image executionImage;
 
     Seeker seeker;
 
@@ -138,7 +140,7 @@ public class Enemy : MonoBehaviour
         {
             if(Time.time >= nextAttackTime)
             {
-                enemy.GetComponent<PlayerController>().TakeDamage(damage);
+                enemy.GetComponent<PlayerController>().TakeDamage(this.anim, damage,this.executionImage);
             }
         }
         isAttacking = false;
@@ -156,8 +158,7 @@ public class Enemy : MonoBehaviour
 
     public void Die()
     {
-        Debug.Log("died");
-
+        anim.SetBool("isParrying", false);
         anim.SetBool("isDead", true);
 
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;

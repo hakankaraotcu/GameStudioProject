@@ -109,9 +109,9 @@ TextureImporter:
       name: 2_atk_7_0
       rect:
         serializedVersion: 2
-        x: 126
+        x: 111
         y: 0
-        width: 64
+        width: 76
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

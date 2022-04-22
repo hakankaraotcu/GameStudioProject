@@ -21,6 +21,10 @@ public class IdleScript : StateMachineBehaviour
         {
             PlayerController.instance.anim.Play("Defend1");
         }
+        if (PlayerController.instance.isMeditate)
+        {
+            PlayerController.instance.anim.Play("Meditate1");
+        }
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

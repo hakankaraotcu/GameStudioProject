@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Skeleton : Enemy
 {
-    [SerializeField] private int maxhealth = 100;
+    public int maxhealth = 100;
     [SerializeField] private int currentHealth;
     [SerializeField] private float wayPointLeft;
     [SerializeField] private float wayPointRight;
@@ -27,14 +27,14 @@ public class Skeleton : Enemy
     {
         Collider2D[] followEnemies = Physics2D.OverlapCircleAll(followArea.position, followRange, enemyLayers);
 
-        if(followEnemies.Length == 1)
+        if(!anim.GetBool("isParrying") && followEnemies.Length == 1)
         {
             if (TargetInDistance() && followEnabled)
             {
                 PathFollow();
             }
         }
-        else if (anim.GetBool("isWalking"))
+        else if(anim.GetBool("isWalking"))
         {
             Movement();
         }

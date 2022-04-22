@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public Animator anim;
+    public Animator anim, enemyAnim;
     private Collider2D coll;
     public int healthPotion;
-    private Vector2 moveDir;
+    private Image image;
+    private int timer;
     [SerializeField] private Transform attackPoint;
     [SerializeField] private LayerMask enemyLayers;
     [SerializeField] private LayerMask ground;
@@ -29,11 +31,14 @@ public class PlayerController : MonoBehaviour
     private bool isDashing;
     public bool isAttacking = false;
     public bool isBlocking = false;
+    public bool isMeditate = false;
+    public bool isParrying = false;
+    public bool isCounterAttack = false;
     public bool canMove = true;
     public static PlayerController instance;
     private float rollDir;
     private float dirX;
-    private enum State { idle, running, jumping, falling, rolling, hurt};
+    private enum State { idle, running, jumping, falling, rolling};
     private State state = State.idle;
 
     [SerializeField] private HealthBar healthBar;
@@ -56,16 +61,28 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if(state != State.hurt && canMove)
+        if (canMove)
         {
             Movement();
         }
-
         Attack();
         Block();
+        Meditate();
 
         AnimState();
         anim.SetInteger("state", (int)state);
+    }
+
+    private void Meditate()
+    {
+        if (Input.GetKeyDown(KeyCode.Q) && coll.IsTouchingLayers(ground) && currentHealth < maxhealth)
+        {
+            isMeditate = true;
+        }
+        if (Input.GetKeyUp(KeyCode.Q))
+        {
+            isMeditate = false;
+        }
     }
 
     private void Attack()
@@ -74,7 +91,23 @@ public class PlayerController : MonoBehaviour
         {
             isAttacking = true;
         }
+        if (isCounterAttack)
+        {
+            if (Input.GetKeyDown(KeyCode.R) && enemyAnim.GetBool("isParrying"))
+            {
+                image.enabled = false;
+                anim.SetTrigger("specialAttack");
+                isCounterAttack = false;
+            }
+            else if ((int)Time.time == timer && !anim.GetCurrentAnimatorStateInfo(0).IsName("SpecialAttack"))
+            {
+                enemyAnim.SetBool("isParrying", false);
+                image.enabled = false;
+                isCounterAttack = false;
+            }
+        }
     }
+
     private void Block()
     {
         if (Input.GetKey(KeyCode.E) && coll.IsTouchingLayers(ground))
@@ -95,6 +128,27 @@ public class PlayerController : MonoBehaviour
         {
             enemy.GetComponent<Skeleton>().TakeDamage(damage);
         }
+    }
+
+    private void CounterAttack()
+    {
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            enemy.GetComponent<Skeleton>().TakeDamage(enemy.GetComponent<Skeleton>().maxhealth);
+        }
+    }
+
+    private void Healing()
+    {
+        currentHealth += 20;
+        if (currentHealth > maxhealth)
+        {
+            isMeditate = false;
+            currentHealth = maxhealth;
+        }
+        healthBar.SetHealth(currentHealth);
     }
 
     private void CheckMove()
@@ -179,7 +233,7 @@ public class PlayerController : MonoBehaviour
     {
         if(other.gameObject.tag == "Enemy")
         {
-            state = State.hurt;
+            anim.SetTrigger("hurt");
             currentHealth -= 20;
             healthBar.SetHealth(currentHealth);
 
@@ -259,13 +313,6 @@ public class PlayerController : MonoBehaviour
                 state = State.idle;
             }
         }
-        else if (state == State.hurt)
-        {
-            if (Mathf.Abs(rb.velocity.x) < .1f)
-            {
-                state = State.idle;
-            }
-        }
         else if (Mathf.Abs(rb.velocity.x) > 1f && coll.IsTouchingLayers(ground))
         {
             state = State.running;
@@ -283,7 +330,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(Animator enemyAnimation, int damage, Image executionImage)
     {
         if (!isBlocking)
         {
@@ -292,7 +339,7 @@ public class PlayerController : MonoBehaviour
             currentHealth -= getDamage;
             healthBar.SetHealth(currentHealth);
 
-            state = State.hurt;
+            anim.SetTrigger("hurt");
 
             if (currentHealth <= 0)
             {
@@ -322,11 +369,20 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+        else if (isParrying)
+        {
+            isCounterAttack = true;
+            timer = (int) Time.time + 3;
+            image = executionImage;
+            enemyAnim = enemyAnimation;
+            enemyAnim.SetBool("isParrying", true);
+            enemyAnim.Play("Parry");
+            image.enabled = true;
+        }
     }
 
     public void Die()
     {
-        Debug.Log("died");
         anim.SetBool("isDead", true);
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         GetComponent<Collider2D>().enabled = false;
