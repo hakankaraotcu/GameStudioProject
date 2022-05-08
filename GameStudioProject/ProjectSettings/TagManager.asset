@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Collectible
   - Enemy
+  - Platform
   layers:
   - Default
   - TransparentFX
@@ -15,8 +16,8 @@ TagManager:
   - UI
   - Ground
   - Enemies
-  - 
-  - 
+  - Platform
+  - Portal
   - 
   - 
   - 
@@ -40,11 +41,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
   - name: Background
     uniqueID: 2123389175
     locked: 0
-  - name: Default
-    uniqueID: 0
+  - name: Middle
+    uniqueID: 126659639
     locked: 0
   - name: Entity
     uniqueID: 2450620057

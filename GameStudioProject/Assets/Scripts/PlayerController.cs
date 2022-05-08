@@ -8,14 +8,19 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     public Animator anim, enemyAnim;
     private Collider2D coll;
-    public int healthPotion;
+    [SerializeField] private GameObject[] potions;
+    [SerializeField] private int healthPotion = 0;
+    [SerializeField] private int maxHealthPotion;
     private Image image;
     private int timer;
     [SerializeField] private Transform attackPoint;
     [SerializeField] private LayerMask enemyLayers;
     [SerializeField] private LayerMask ground;
-    [SerializeField] private int maxhealth = 100;
+    [SerializeField] private LayerMask platform;
+    [SerializeField] private int maxHealth = 100;
     [SerializeField] private int currentHealth;
+    [SerializeField] private int maxStamina = 100;
+    [SerializeField] private int currentStamina;
     [SerializeField] private float speed = 8f;
     [SerializeField] private float jumpForce = 14f;
     [SerializeField] private float hurtForce = 7f;
@@ -38,30 +43,49 @@ public class PlayerController : MonoBehaviour
     public static PlayerController instance;
     private float rollDir;
     private float dirX;
-    private enum State { idle, running, jumping, falling, rolling};
+    private int playerLayer, platformLayer;
+    private bool jumpOffCoroutineIsRunning = false;
+    private enum State { idle, running, jumping, falling, rolling, climb};
     private State state = State.idle;
 
     [SerializeField] private HealthBar healthBar;
+    [SerializeField] private StaminaBar staminaBar;
+
+    public bool canClimb = false;
+    public bool bottomLadder = false;
+    public bool topLadder = false;
+    public bool checkLadder = false;
+    public Ladder ladder;
+    private float naturalGravity;
+    [SerializeField] float climbSpeed = 3f;
 
     private void Awake()
     {
         instance = this;
     }
 
-    // Start is called before the first frame update
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
-        currentHealth = maxhealth;
-        healthBar.SetMaxHealth(maxhealth);
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+        currentStamina = maxStamina;
+        staminaBar.SetMaxStamina(maxStamina);
+        maxHealthPotion = potions.Length;
+        playerLayer = LayerMask.NameToLayer("Player");
+        platformLayer = LayerMask.NameToLayer("Platform");
+        naturalGravity = rb.gravityScale;
     }
 
-    // Update is called once per frame
     private void Update()
     {
-        if (canMove)
+        if (state == State.climb)
+        {
+            Climb();
+        }
+        else if (canMove)
         {
             Movement();
         }
@@ -73,21 +97,9 @@ public class PlayerController : MonoBehaviour
         anim.SetInteger("state", (int)state);
     }
 
-    private void Meditate()
-    {
-        if (Input.GetKeyDown(KeyCode.Q) && coll.IsTouchingLayers(ground) && currentHealth < maxhealth)
-        {
-            isMeditate = true;
-        }
-        if (Input.GetKeyUp(KeyCode.Q))
-        {
-            isMeditate = false;
-        }
-    }
-
     private void Attack()
     {
-        if(Input.GetKeyDown(KeyCode.F) && !isAttacking && coll.IsTouchingLayers(ground))
+        if(Input.GetKeyDown(KeyCode.F) && !isAttacking && (coll.IsTouchingLayers(ground) || coll.IsTouchingLayers(platform)))
         {
             isAttacking = true;
         }
@@ -95,9 +107,13 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.R) && enemyAnim.GetBool("isParrying"))
             {
-                image.enabled = false;
-                anim.SetTrigger("specialAttack");
-                isCounterAttack = false;
+                Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+                if (hitEnemies.Length != 0)
+                {
+                    image.enabled = false;
+                    anim.SetTrigger("specialAttack");
+                    isCounterAttack = false;
+                }
             }
             else if ((int)Time.time == timer && !anim.GetCurrentAnimatorStateInfo(0).IsName("SpecialAttack"))
             {
@@ -110,7 +126,7 @@ public class PlayerController : MonoBehaviour
 
     private void Block()
     {
-        if (Input.GetKey(KeyCode.E) && coll.IsTouchingLayers(ground))
+        if (Input.GetKey(KeyCode.E) && (coll.IsTouchingLayers(ground) || coll.IsTouchingLayers(platform)))
         {
             isBlocking = true;
         }
@@ -140,13 +156,44 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void Healing()
+    private void Meditate()
     {
-        currentHealth += 20;
-        if (currentHealth > maxhealth)
+        if (Input.GetKeyDown(KeyCode.Q) && (coll.IsTouchingLayers(ground) || coll.IsTouchingLayers(platform)) && currentHealth < maxHealth && currentStamina > 0)
+        {
+            isMeditate = true;
+        }
+        if (Input.GetKeyUp(KeyCode.Q))
         {
             isMeditate = false;
-            currentHealth = maxhealth;
+        }
+    }
+
+    private void Healing()
+    {
+        currentHealth += (maxHealth * 5) / 100;
+        currentStamina -= (maxStamina * 5) / 100;
+        if (currentHealth > maxHealth)
+        {
+            isMeditate = false;
+            currentHealth = maxHealth;
+        }
+        else if(currentStamina <= 0)
+        {
+            isMeditate = false;
+            currentStamina = 0;
+        }
+        healthBar.SetHealth(currentHealth);
+        staminaBar.SetStamina(currentStamina);
+    }
+
+    private void AddLife()
+    {
+        healthPotion -= 1;
+        potions[healthPotion].gameObject.SetActive(false);
+        currentHealth += (maxHealth * 25) / 100;
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
         }
         healthBar.SetHealth(currentHealth);
     }
@@ -159,7 +206,14 @@ public class PlayerController : MonoBehaviour
     private void Movement()
     {
         dirX = Input.GetAxis("Horizontal");
-        
+
+        if (canClimb && Mathf.Abs(Input.GetAxis("Vertical")) > .1f)
+        {
+            state = State.climb;
+            rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+            transform.position = new Vector3(ladder.transform.position.x, rb.position.y);
+            rb.gravityScale = 0f;
+        }
         if (dirX < 0)
         {
             rb.velocity = new Vector2(dirX * speed, rb.velocity.y);
@@ -174,7 +228,7 @@ public class PlayerController : MonoBehaviour
         {
             rollDir = dirX;
         }
-        if(Input.GetKeyDown(KeyCode.LeftControl) && coll.IsTouchingLayers(ground))
+        if(Input.GetKeyDown(KeyCode.LeftControl) && (coll.IsTouchingLayers(ground) || coll.IsTouchingLayers(platform)))
         {
             isDashing = true;
             currentDashTimer = startDashTimer;
@@ -190,7 +244,7 @@ public class PlayerController : MonoBehaviour
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
             rb.constraints = RigidbodyConstraints2D.FreezePositionY;
         }
-        if (Input.GetButtonDown("Jump") && (coll.IsTouchingLayers(ground) || isDashing))
+        if (Input.GetButtonDown("Jump") && ((coll.IsTouchingLayers(ground) || isDashing) || (coll.IsTouchingLayers(platform) || isDashing)) && !Input.GetKey(KeyCode.S))
         {
             gameObject.GetComponent<BoxCollider2D>().enabled = true;
             rb.constraints = RigidbodyConstraints2D.None;
@@ -199,11 +253,93 @@ public class PlayerController : MonoBehaviour
             state = State.jumping;
             isDashing = false;
         }
+        else if(Input.GetButtonDown("Jump") && ((coll.IsTouchingLayers(ground) || isDashing) || (coll.IsTouchingLayers(platform) || isDashing)) && Input.GetKey(KeyCode.S))
+        {
+            StartCoroutine("JumpOff");
+        }
+        if(state == State.jumping)
+        {
+            Physics2D.IgnoreLayerCollision(playerLayer, platformLayer, true);
+        }
+        else if(state == State.falling && !jumpOffCoroutineIsRunning)
+        {
+            Physics2D.IgnoreLayerCollision(playerLayer, platformLayer, false);
+        }
         if (isDashing)
         {
             state = State.rolling;
             rb.velocity = transform.right * dashDirection * dashForce;
         }
+        if (Input.GetKeyDown(KeyCode.T) && healthPotion > 0 && currentHealth < maxHealth)
+        {
+            AddLife();
+        }
+    }
+
+    private void Climb()
+    {
+        if (Input.GetButtonDown("Jump"))
+        {
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            canClimb = false;
+            rb.gravityScale = naturalGravity;
+            state = State.jumping;
+            checkLadder = false;
+            isDashing = false;
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            return;
+        }
+        else if(Input.GetAxisRaw("Vertical") != 0 && topLadder && !checkLadder)
+        {
+            transform.position = new Vector2(transform.position.x, ladder.transform.position.y + 2);
+            checkLadder = true;
+        }
+        else if (Input.GetAxisRaw("Vertical") == -1 && bottomLadder)
+        {
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            canClimb = false;
+            rb.gravityScale = naturalGravity;
+            state = State.jumping;
+            checkLadder = false;
+            isDashing = false;
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y);
+            return;
+        }
+
+        float vDirection = Input.GetAxis("Vertical");
+
+        if (Input.GetAxisRaw("Vertical") == 1 && !topLadder)
+        {
+            rb.velocity = new Vector2(0f, vDirection * climbSpeed);
+        }
+        else if(Input.GetAxisRaw("Vertical") == -1 && !bottomLadder)
+        {
+            rb.velocity = new Vector2(0f, vDirection * climbSpeed);
+        }
+        else if (!canClimb)
+        {
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            canClimb = false;
+            rb.gravityScale = naturalGravity;
+            state = State.jumping;
+            checkLadder = false;
+            isDashing = false;
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y);
+            return;
+        }
+        else
+        {
+            rb.velocity = Vector2.zero;
+        }
+    }
+
+    IEnumerator JumpOff()
+    {
+        jumpOffCoroutineIsRunning = true;
+        Physics2D.IgnoreLayerCollision(playerLayer, platformLayer, true);
+        yield return new WaitForSeconds (0.5f);
+        Physics2D.IgnoreLayerCollision(playerLayer, platformLayer, false);
+        jumpOffCoroutineIsRunning = false;
     }
 
     public void OnDrawGizmosSelected()
@@ -220,12 +356,12 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.tag == "Collectible")
         {
-            Destroy(collision.gameObject);
-            currentHealth += 100;
-            if(currentHealth > maxhealth) {
-                currentHealth = maxhealth;
+            if (healthPotion < maxHealthPotion)
+            {
+                Destroy(collision.gameObject);
+                potions[healthPotion].gameObject.SetActive(true);
+                healthPotion += 1;
             }
-            healthBar.SetHealth(currentHealth);
         }
     }
 
@@ -244,7 +380,7 @@ public class PlayerController : MonoBehaviour
 
             if(other.gameObject.transform.position.x > transform.position.x)
             {
-                if (coll.IsTouchingLayers(ground))
+                if (coll.IsTouchingLayers(ground) || coll.IsTouchingLayers(platform))
                 {
                     rb.velocity = new Vector2(-hurtForce, rb.velocity.y);
                 }
@@ -255,7 +391,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                if (coll.IsTouchingLayers(ground))
+                if (coll.IsTouchingLayers(ground) || coll.IsTouchingLayers(platform))
                 {
                     rb.velocity = new Vector2(hurtForce, rb.velocity.y);
                 }
@@ -269,7 +405,11 @@ public class PlayerController : MonoBehaviour
 
     private void AnimState()
     {
-        if (state == State.jumping)
+        if(state == State.climb)
+        {
+
+        }
+        else if (state == State.jumping)
         {
             if (rb.velocity.y < 0.1f)
             {
@@ -308,18 +448,18 @@ public class PlayerController : MonoBehaviour
         }
         else if (state == State.falling)
         {
-            if (coll.IsTouchingLayers(ground))
+            if (coll.IsTouchingLayers(ground) || coll.IsTouchingLayers(platform))
             {
                 state = State.idle;
             }
         }
-        else if (Mathf.Abs(rb.velocity.x) > 1f && coll.IsTouchingLayers(ground))
+        else if (Mathf.Abs(rb.velocity.x) > 1f && (coll.IsTouchingLayers(ground) || coll.IsTouchingLayers(platform)))
         {
             state = State.running;
         }
         else if (state == State.idle)
         {
-            if (!coll.IsTouchingLayers(ground))
+            if (!coll.IsTouchingLayers(ground) && !coll.IsTouchingLayers(platform))
             {
                 state = State.falling;
             }
@@ -348,7 +488,7 @@ public class PlayerController : MonoBehaviour
 
             else if (transform.localScale.x == 3)
             {
-                if (coll.IsTouchingLayers(ground))
+                if (coll.IsTouchingLayers(ground) || coll.IsTouchingLayers(platform))
                 {
                     rb.velocity = new Vector2(-hurtForce, rb.velocity.y);
                 }
@@ -359,7 +499,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                if (coll.IsTouchingLayers(ground))
+                if (coll.IsTouchingLayers(ground) || coll.IsTouchingLayers(platform))
                 {
                     rb.velocity = new Vector2(hurtForce, rb.velocity.y);
                 }

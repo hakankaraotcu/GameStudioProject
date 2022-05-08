@@ -73,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1844347239
-  m_SortingLayer: 1
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -1492088842765610512, guid: 5344df278f2e4824eb43c18d80965335, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -164,8 +164,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9a40005ce800024d85694179486635e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  target: {fileID: 0}
+  activateDistance: 50
+  pathUpdateSeconds: 0.5
+  speed: 10
+  nextWaypointDistance: 3
+  followEnabled: 1
+  directionLookEnabled: 1
+  attackPoint: {fileID: 0}
+  attackRange: 0.5
+  hitEnemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  damage: 40
+  attackRate: 2
+  executionImage: {fileID: 0}
   maxhealth: 100
   currentHealth: 0
   wayPointLeft: 0.01
   wayPointRight: 9.08
   walkLength: 2
+  followRange: 0.5
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  followArea: {fileID: 0}
