@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
     public static PlayerController instance;
     private float rollDir;
     private float dirX;
-    private int playerLayer, platformLayer;
+    private int playerLayer, platformLayer, enemyLayer;
     private bool jumpOffCoroutineIsRunning = false;
     private enum State { idle, running, jumping, falling, rolling, climb};
     private State state = State.idle;
@@ -76,6 +76,7 @@ public class PlayerController : MonoBehaviour
         maxHealthPotion = potions.Length;
         playerLayer = LayerMask.NameToLayer("Player");
         platformLayer = LayerMask.NameToLayer("Platform");
+        enemyLayer = LayerMask.NameToLayer("Enemies");
         naturalGravity = rb.gravityScale;
     }
 
@@ -241,14 +242,11 @@ public class PlayerController : MonoBehaviour
             {
                 dashDirection = rollDir;
             }
-            gameObject.GetComponent<BoxCollider2D>().enabled = false;
-            rb.constraints = RigidbodyConstraints2D.FreezePositionY;
+            Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, true);
         }
         if (Input.GetButtonDown("Jump") && ((coll.IsTouchingLayers(ground) || isDashing) || (coll.IsTouchingLayers(platform) || isDashing)) && !Input.GetKey(KeyCode.S))
         {
-            gameObject.GetComponent<BoxCollider2D>().enabled = true;
-            rb.constraints = RigidbodyConstraints2D.None;
-            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             state = State.jumping;
             isDashing = false;
@@ -425,23 +423,17 @@ public class PlayerController : MonoBehaviour
                 if(rb.velocity.y < .1f)
                 {
                     state = State.falling;
-                    gameObject.GetComponent<BoxCollider2D>().enabled = true;
-                    rb.constraints = RigidbodyConstraints2D.None;
-                    rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                    Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
                 }
                 else if(dirX != 0)
                 {
                     state = State.running;
-                    gameObject.GetComponent<BoxCollider2D>().enabled = true;
-                    rb.constraints = RigidbodyConstraints2D.None;
-                    rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                    Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
                 }
                 else
                 {
                     state = State.idle;
-                    gameObject.GetComponent<BoxCollider2D>().enabled = true;
-                    rb.constraints = RigidbodyConstraints2D.None;
-                    rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                    Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
                 }
             }
             

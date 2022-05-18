@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour
     public float attackRate = 2f;
     protected float nextAttackTime = 0f;
     protected bool isAttacking;
-    [SerializeField]protected Image executionImage;
+    [SerializeField] protected Image executionImage;
 
     Seeker seeker;
 
