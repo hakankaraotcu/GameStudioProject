@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7217991119174606464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.155, y: -0.585, z: 0}
+  m_LocalPosition: {x: 0.365, y: -0.098, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7217991118602153950}
@@ -44,10 +44,9 @@ GameObject:
   - component: {fileID: 7217991120405855478}
   - component: {fileID: 7217991120405855477}
   - component: {fileID: 7217991120405855476}
-  - component: {fileID: 7217991120405855475}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,17 +104,17 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1844347239
-  m_SortingLayer: 1
+  m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d0d99d33c4b405a409fc307d950ddd1a, type: 3}
+  m_Sprite: {fileID: -4753702385071775785, guid: d0d99d33c4b405a409fc307d950ddd1a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.5, y: 2}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &7217991120405855479
@@ -131,18 +130,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.003989443, y: -0.6321027}
+  m_Offset: {x: 0.003989443, y: -0.12462573}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.5, y: 2}
-    newSize: {x: 4.5, y: 2}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.15511376, y: 0.5081948}
+  m_Size: {x: 0.15511376, y: 0.5164068}
   m_EdgeRadius: 0
 --- !u!50 &7217991120405855478
 Rigidbody2D:
@@ -177,13 +176,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bd918272364a444eb6d34c31afc85be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPotion: 0
+  anim: {fileID: 7217991120405855476}
+  enemyAnim: {fileID: 0}
+  attackPoint: {fileID: 7217991119174606465}
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  bossLayers:
+    serializedVersion: 2
+    m_Bits: 1024
   ground:
     serializedVersion: 2
     m_Bits: 64
+  platform:
+    serializedVersion: 2
+    m_Bits: 256
   speed: 8
   jumpForce: 14
-  hurtForce: 7
+  hurtForce: 6
+  damage: 40
+  getDamage: 0
+  attackRate: 2
+  attackRange: 0.68
+  nextAttackTime: 0
+  dashForce: 15
+  startDashTimer: 0.4
+  currentDashTimer: 0
+  dashDirection: 0
+  isAttacking: 0
+  isBlocking: 0
+  isMeditate: 0
+  isParrying: 0
+  isCounterAttack: 0
+  canMove: 1
+  healthBar: {fileID: 0}
+  staminaBar: {fileID: 0}
+  canClimb: 0
+  bottomLadder: 0
+  topLadder: 0
+  checkLadder: 0
+  ladder: {fileID: 0}
+  climbSpeed: 3
 --- !u!95 &7217991120405855476
 Animator:
   serializedVersion: 3
@@ -203,24 +236,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7217991120405855475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7217991120405855474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e947b45266824d44da320d33ada51e0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 7217991120405855476}
-  attackPoint: {fileID: 7217991119174606465}
-  attackRange: 0.68
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 128
-  damage: 40
-  attackRate: 2
-  nextAttackTime: 0

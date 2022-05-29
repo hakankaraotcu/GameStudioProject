@@ -146,6 +146,20 @@ public class Enemy : MonoBehaviour
         isAttacking = false;
     }
 
+    public void NoCounterAttack()
+    {
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, hitEnemyLayers);
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            if (Time.time >= nextAttackTime)
+            {
+                enemy.GetComponent<PlayerController>().NoCounterTakeDamage(damage);
+            }
+        }
+        isAttacking = false;
+    }
+
     public void OnDrawGizmosSelected()
     {
         if (attackPoint == null)
@@ -154,15 +168,5 @@ public class Enemy : MonoBehaviour
         }
 
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
-    }
-
-    public void Die()
-    {
-        anim.SetBool("isParrying", false);
-        anim.SetBool("isDead", true);
-
-        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-        GetComponent<Collider2D>().enabled = false;
-        this.enabled = false;
     }
 }

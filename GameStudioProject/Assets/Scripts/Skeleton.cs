@@ -77,6 +77,7 @@ public class Skeleton : Enemy
             }
         }
     }
+
     public void TakeDamage(int damage)
     {
         if (!isAttacking)
@@ -90,6 +91,33 @@ public class Skeleton : Enemy
                 Die();
             }
         }
+    }
+
+    public void Executed()
+    {
+        if (!isAttacking)
+        {
+            currentHealth -= currentHealth;
+
+            anim.SetTrigger("hurt");
+
+            if (currentHealth <= 0)
+            {
+                Die();
+            }
+        }
+    }
+
+    public void Die()
+    {
+        anim.SetBool("isParrying", false);
+        anim.SetBool("isDead", true);
+        PermanentUI.GetInstance().exp += 125;
+        PermanentUI.GetInstance().GainExperience();
+
+        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        GetComponent<Collider2D>().enabled = false;
+        this.enabled = false;
     }
 
     public void OnDrawGizmosSelected()

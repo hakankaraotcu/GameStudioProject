@@ -8,19 +8,12 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     public Animator anim, enemyAnim;
     private Collider2D coll;
-    [SerializeField] private GameObject[] potions;
-    [SerializeField] private int healthPotion = 0;
-    [SerializeField] private int maxHealthPotion;
     private Image image;
     private int timer;
     [SerializeField] private Transform attackPoint;
-    [SerializeField] private LayerMask enemyLayers;
+    [SerializeField] private LayerMask enemyLayers, bossLayers;
     [SerializeField] private LayerMask ground;
     [SerializeField] private LayerMask platform;
-    [SerializeField] private int maxHealth = 100;
-    [SerializeField] private int currentHealth;
-    [SerializeField] private int maxStamina = 100;
-    [SerializeField] private int currentStamina;
     [SerializeField] private float speed = 8f;
     [SerializeField] private float jumpForce = 14f;
     [SerializeField] private float hurtForce = 7f;
@@ -43,7 +36,7 @@ public class PlayerController : MonoBehaviour
     public static PlayerController instance;
     private float rollDir;
     private float dirX;
-    private int playerLayer, platformLayer, enemyLayer;
+    private int playerLayer, platformLayer, enemyLayer, bossLayer;
     private bool jumpOffCoroutineIsRunning = false;
     private enum State { idle, running, jumping, falling, rolling, climb};
     private State state = State.idle;
@@ -69,14 +62,15 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
-        currentStamina = maxStamina;
-        staminaBar.SetMaxStamina(maxStamina);
-        maxHealthPotion = potions.Length;
+        PermanentUI.GetInstance().currentHealth = PermanentUI.GetInstance().maxHealth;
+        healthBar.SetMaxHealth(PermanentUI.GetInstance().maxHealth);
+        PermanentUI.GetInstance().currentStamina = PermanentUI.GetInstance().maxStamina;
+        staminaBar.SetMaxStamina(PermanentUI.GetInstance().maxStamina);
+        PermanentUI.GetInstance().maxHealthPotion = PermanentUI.GetInstance().potions.Length;
         playerLayer = LayerMask.NameToLayer("Player");
         platformLayer = LayerMask.NameToLayer("Platform");
         enemyLayer = LayerMask.NameToLayer("Enemies");
+        bossLayer = LayerMask.NameToLayer("Bosses");
         naturalGravity = rb.gravityScale;
     }
 
@@ -140,10 +134,21 @@ public class PlayerController : MonoBehaviour
     private void DealtDamage()
     {
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        Collider2D[] hitBoss = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, bossLayers);
 
-        foreach (Collider2D enemy in hitEnemies)
+        if(hitEnemies != null)
         {
-            enemy.GetComponent<Skeleton>().TakeDamage(damage);
+            foreach (Collider2D enemy in hitEnemies)
+            {
+                enemy.transform.gameObject.SendMessage("TakeDamage", damage);
+            }
+        }
+        if(hitBoss != null)
+        {
+            foreach(Collider2D boss in hitBoss)
+            {
+                boss.transform.gameObject.SendMessage("TakeDamage", damage);
+            }
         }
     }
 
@@ -151,15 +156,18 @@ public class PlayerController : MonoBehaviour
     {
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
-        foreach (Collider2D enemy in hitEnemies)
+        if (hitEnemies != null)
         {
-            enemy.GetComponent<Skeleton>().TakeDamage(enemy.GetComponent<Skeleton>().maxhealth);
+            foreach (Collider2D enemy in hitEnemies)
+            {
+                enemy.transform.gameObject.SendMessage("Executed");
+            }
         }
     }
 
     private void Meditate()
     {
-        if (Input.GetKeyDown(KeyCode.Q) && (coll.IsTouchingLayers(ground) || coll.IsTouchingLayers(platform)) && currentHealth < maxHealth && currentStamina > 0)
+        if (Input.GetKeyDown(KeyCode.Q) && (coll.IsTouchingLayers(ground) || coll.IsTouchingLayers(platform)) && PermanentUI.GetInstance().currentHealth < PermanentUI.GetInstance().maxHealth && PermanentUI.GetInstance().currentStamina > 0)
         {
             isMeditate = true;
         }
@@ -171,32 +179,32 @@ public class PlayerController : MonoBehaviour
 
     private void Healing()
     {
-        currentHealth += (maxHealth * 5) / 100;
-        currentStamina -= (maxStamina * 5) / 100;
-        if (currentHealth > maxHealth)
+        PermanentUI.GetInstance().currentHealth += (PermanentUI.GetInstance().maxHealth * 5) / 100;
+        PermanentUI.GetInstance().currentStamina -= (PermanentUI.GetInstance().maxStamina * 5) / 100;
+        if (PermanentUI.GetInstance().currentHealth > PermanentUI.GetInstance().maxHealth)
         {
             isMeditate = false;
-            currentHealth = maxHealth;
+            PermanentUI.GetInstance().currentHealth = PermanentUI.GetInstance().maxHealth;
         }
-        else if(currentStamina <= 0)
+        else if(PermanentUI.GetInstance().currentStamina <= 0)
         {
             isMeditate = false;
-            currentStamina = 0;
+            PermanentUI.GetInstance().currentStamina = 0;
         }
-        healthBar.SetHealth(currentHealth);
-        staminaBar.SetStamina(currentStamina);
+        healthBar.SetHealth(PermanentUI.GetInstance().currentHealth);
+        staminaBar.SetStamina(PermanentUI.GetInstance().currentStamina);
     }
 
     private void AddLife()
     {
-        healthPotion -= 1;
-        potions[healthPotion].gameObject.SetActive(false);
-        currentHealth += (maxHealth * 25) / 100;
-        if (currentHealth > maxHealth)
+        PermanentUI.GetInstance().healthPotion -= 1;
+        PermanentUI.GetInstance().potions[PermanentUI.GetInstance().healthPotion].gameObject.SetActive(false);
+        PermanentUI.GetInstance().currentHealth += (PermanentUI.GetInstance().maxHealth * 25) / 100;
+        if (PermanentUI.GetInstance().currentHealth > PermanentUI.GetInstance().maxHealth)
         {
-            currentHealth = maxHealth;
+            PermanentUI.GetInstance().currentHealth = PermanentUI.GetInstance().maxHealth;
         }
-        healthBar.SetHealth(currentHealth);
+        healthBar.SetHealth(PermanentUI.GetInstance().currentHealth);
     }
 
     private void CheckMove()
@@ -243,10 +251,12 @@ public class PlayerController : MonoBehaviour
                 dashDirection = rollDir;
             }
             Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, true);
+            Physics2D.IgnoreLayerCollision(playerLayer, bossLayer, true);
         }
         if (Input.GetButtonDown("Jump") && ((coll.IsTouchingLayers(ground) || isDashing) || (coll.IsTouchingLayers(platform) || isDashing)) && !Input.GetKey(KeyCode.S))
         {
             Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
+            Physics2D.IgnoreLayerCollision(playerLayer, bossLayer, false);
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             state = State.jumping;
             isDashing = false;
@@ -268,7 +278,7 @@ public class PlayerController : MonoBehaviour
             state = State.rolling;
             rb.velocity = transform.right * dashDirection * dashForce;
         }
-        if (Input.GetKeyDown(KeyCode.T) && healthPotion > 0 && currentHealth < maxHealth)
+        if (Input.GetKeyDown(KeyCode.T) && PermanentUI.GetInstance().healthPotion > 0 && PermanentUI.GetInstance().currentHealth < PermanentUI.GetInstance().maxHealth)
         {
             AddLife();
         }
@@ -354,11 +364,11 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.tag == "Collectible")
         {
-            if (healthPotion < maxHealthPotion)
+            if (PermanentUI.GetInstance().healthPotion < PermanentUI.GetInstance().maxHealthPotion)
             {
                 Destroy(collision.gameObject);
-                potions[healthPotion].gameObject.SetActive(true);
-                healthPotion += 1;
+                PermanentUI.GetInstance().potions[PermanentUI.GetInstance().healthPotion].gameObject.SetActive(true);
+                PermanentUI.GetInstance().healthPotion += 1;
             }
         }
     }
@@ -368,10 +378,10 @@ public class PlayerController : MonoBehaviour
         if(other.gameObject.tag == "Enemy")
         {
             anim.SetTrigger("hurt");
-            currentHealth -= 20;
-            healthBar.SetHealth(currentHealth);
+            PermanentUI.GetInstance().currentHealth -= 20;
+            healthBar.SetHealth(PermanentUI.GetInstance().currentHealth);
 
-            if (currentHealth <= 0)
+            if (PermanentUI.GetInstance().currentHealth <= 0)
             {
                 Die();
             }
@@ -424,16 +434,19 @@ public class PlayerController : MonoBehaviour
                 {
                     state = State.falling;
                     Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
+                    Physics2D.IgnoreLayerCollision(playerLayer, bossLayer, false);
                 }
                 else if(dirX != 0)
                 {
                     state = State.running;
                     Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
+                    Physics2D.IgnoreLayerCollision(playerLayer, bossLayer, false);
                 }
                 else
                 {
                     state = State.idle;
                     Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
+                    Physics2D.IgnoreLayerCollision(playerLayer, bossLayer, false);
                 }
             }
             
@@ -462,18 +475,60 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void TakeDamage(Animator enemyAnimation, int damage, Image executionImage)
+    public void NoCounterTakeDamage(int damage)
     {
         if (!isBlocking)
         {
             canMove = true;
             getDamage = damage;
-            currentHealth -= getDamage;
-            healthBar.SetHealth(currentHealth);
+            PermanentUI.GetInstance().currentHealth -= getDamage;
+            healthBar.SetHealth(PermanentUI.GetInstance().currentHealth);
 
             anim.SetTrigger("hurt");
 
-            if (currentHealth <= 0)
+            if (PermanentUI.GetInstance().currentHealth <= 0)
+            {
+                Die();
+            }
+
+            else if (transform.localScale.x == 3)
+            {
+                if (coll.IsTouchingLayers(ground) || coll.IsTouchingLayers(platform))
+                {
+                    rb.velocity = new Vector2(-hurtForce, rb.velocity.y);
+                }
+                else
+                {
+                    rb.velocity = new Vector2(-hurtForce, 10f);
+                }
+            }
+            else
+            {
+                if (coll.IsTouchingLayers(ground) || coll.IsTouchingLayers(platform))
+                {
+                    rb.velocity = new Vector2(hurtForce, rb.velocity.y);
+                }
+                else
+                {
+                    rb.velocity = new Vector2(hurtForce, 10f);
+                }
+            }
+        }
+    }
+
+    public void TakeDamage(Animator enemyAnimation, int damage, Image executionImage)
+    {
+        if (!isBlocking)
+        {
+            print("haha");
+            canMove = true;
+            getDamage = damage;
+            PermanentUI.GetInstance().currentHealth -= getDamage;
+            healthBar.SetHealth(PermanentUI.GetInstance().currentHealth);
+
+            anim.SetTrigger("hurt");
+
+            if (PermanentUI.GetInstance().currentHealth <= 0)
             {
                 Die();
             }
@@ -516,6 +571,7 @@ public class PlayerController : MonoBehaviour
     public void Die()
     {
         anim.SetBool("isDead", true);
+        PermanentUI.GetInstance().LoseExperience();
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         GetComponent<Collider2D>().enabled = false;
     }

@@ -257,7 +257,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3892227271300456395
 Transform:
   m_ObjectHideFlags: 0
@@ -417,13 +417,13 @@ MonoBehaviour:
   hitEnemyLayers:
     serializedVersion: 2
     m_Bits: 8
-  damage: 40
+  damage: 10
   attackRate: 0.4
   executionImage: {fileID: 0}
   maxhealth: 400
   currentHealth: 0
-  wayPointLeft: 0.01
-  wayPointRight: 9.08
+  wayPointLeft: 19.98
+  wayPointRight: 30.04
   walkLength: 2
   followRange: 7.31
   enemyLayers:
@@ -483,6 +483,6 @@ MonoBehaviour:
   hitEnemyLayers:
     serializedVersion: 2
     m_Bits: 8
-  damage: 40
-  attackRate: 2
+  damage: 10
+  attackRate: 0.4
   executionImage: {fileID: 1529864065}
