@@ -1,0 +1,7236 @@
+fileFormatVersion: 2
+guid: f59897b5840a15f438584337062674de
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1766325920876340200
+    second: oak_woods_tileset_0
+  - first:
+      213: -4142551662827736079
+    second: oak_woods_tileset_1
+  - first:
+      213: 4158842819825884409
+    second: oak_woods_tileset_2
+  - first:
+      213: 2402445211712133950
+    second: oak_woods_tileset_3
+  - first:
+      213: 1911884313120061145
+    second: oak_woods_tileset_4
+  - first:
+      213: 5732688261993899084
+    second: oak_woods_tileset_5
+  - first:
+      213: -4816038732622182268
+    second: oak_woods_tileset_6
+  - first:
+      213: -669630762253234684
+    second: oak_woods_tileset_7
+  - first:
+      213: 8581478052763860308
+    second: oak_woods_tileset_8
+  - first:
+      213: -5845619340545600539
+    second: oak_woods_tileset_9
+  - first:
+      213: 4851565688244649845
+    second: oak_woods_tileset_10
+  - first:
+      213: -8108341867080123248
+    second: oak_woods_tileset_11
+  - first:
+      213: -5155832743036986079
+    second: oak_woods_tileset_12
+  - first:
+      213: -2203930861366138201
+    second: oak_woods_tileset_13
+  - first:
+      213: 7249804179231347537
+    second: oak_woods_tileset_14
+  - first:
+      213: -6809671514928667676
+    second: oak_woods_tileset_15
+  - first:
+      213: 8272725524738471605
+    second: oak_woods_tileset_16
+  - first:
+      213: 2448541337373580990
+    second: oak_woods_tileset_17
+  - first:
+      213: 8203744005632143928
+    second: oak_woods_tileset_18
+  - first:
+      213: 1075865809102084802
+    second: oak_woods_tileset_19
+  - first:
+      213: -6106635915527383940
+    second: oak_woods_tileset_20
+  - first:
+      213: -4424137602460244048
+    second: oak_woods_tileset_21
+  - first:
+      213: 131085967118225658
+    second: oak_woods_tileset_22
+  - first:
+      213: 6400964159178455564
+    second: oak_woods_tileset_23
+  - first:
+      213: -2716740321675283449
+    second: oak_woods_tileset_24
+  - first:
+      213: -5234337197080910518
+    second: oak_woods_tileset_25
+  - first:
+      213: -6611347533813201175
+    second: oak_woods_tileset_26
+  - first:
+      213: 8569669703176086794
+    second: oak_woods_tileset_27
+  - first:
+      213: -7943913804372152907
+    second: oak_woods_tileset_28
+  - first:
+      213: 4129088925642281517
+    second: oak_woods_tileset_29
+  - first:
+      213: 2816165492749111805
+    second: oak_woods_tileset_30
+  - first:
+      213: 702987326223654204
+    second: oak_woods_tileset_31
+  - first:
+      213: 5242445484738051919
+    second: oak_woods_tileset_32
+  - first:
+      213: -2140290347100810782
+    second: oak_woods_tileset_33
+  - first:
+      213: 3104623611702393707
+    second: oak_woods_tileset_34
+  - first:
+      213: 3870574614792054356
+    second: oak_woods_tileset_35
+  - first:
+      213: 8793691574015063724
+    second: oak_woods_tileset_36
+  - first:
+      213: -1569327482066667229
+    second: oak_woods_tileset_37
+  - first:
+      213: -1214370810239593859
+    second: oak_woods_tileset_38
+  - first:
+      213: 5887037318965428131
+    second: oak_woods_tileset_39
+  - first:
+      213: 1043182089266789601
+    second: oak_woods_tileset_40
+  - first:
+      213: -3037080666400831389
+    second: oak_woods_tileset_41
+  - first:
+      213: 993273340472863197
+    second: oak_woods_tileset_42
+  - first:
+      213: -5675554091274085775
+    second: oak_woods_tileset_43
+  - first:
+      213: -1179240489572781133
+    second: oak_woods_tileset_44
+  - first:
+      213: -5736520902736818721
+    second: oak_woods_tileset_45
+  - first:
+      213: 559791750649929811
+    second: oak_woods_tileset_46
+  - first:
+      213: -3135652379474050368
+    second: oak_woods_tileset_47
+  - first:
+      213: 150534785150014817
+    second: oak_woods_tileset_48
+  - first:
+      213: -387185053688002292
+    second: oak_woods_tileset_49
+  - first:
+      213: 7479756775435502435
+    second: oak_woods_tileset_50
+  - first:
+      213: 7120497284299318470
+    second: oak_woods_tileset_51
+  - first:
+      213: -1399458972262720602
+    second: oak_woods_tileset_52
+  - first:
+      213: 5301832382446438480
+    second: oak_woods_tileset_53
+  - first:
+      213: -642710884887248952
+    second: oak_woods_tileset_54
+  - first:
+      213: 182217246099424964
+    second: oak_woods_tileset_55
+  - first:
+      213: 2743345266034503568
+    second: oak_woods_tileset_56
+  - first:
+      213: -5872710803235021302
+    second: oak_woods_tileset_57
+  - first:
+      213: 707786154790692580
+    second: oak_woods_tileset_58
+  - first:
+      213: -8593522821665252271
+    second: oak_woods_tileset_59
+  - first:
+      213: 9035521697208146806
+    second: oak_woods_tileset_60
+  - first:
+      213: -6819457048703332529
+    second: oak_woods_tileset_61
+  - first:
+      213: -1928803263395444309
+    second: oak_woods_tileset_62
+  - first:
+      213: -7411828571824261717
+    second: oak_woods_tileset_63
+  - first:
+      213: 5996956551187949093
+    second: oak_woods_tileset_64
+  - first:
+      213: -1246643948608910839
+    second: oak_woods_tileset_65
+  - first:
+      213: -4994174665238273833
+    second: oak_woods_tileset_66
+  - first:
+      213: -5334738105114058835
+    second: oak_woods_tileset_67
+  - first:
+      213: 2994852910931360973
+    second: oak_woods_tileset_68
+  - first:
+      213: -6747595602462880772
+    second: oak_woods_tileset_69
+  - first:
+      213: 8620980929654660776
+    second: oak_woods_tileset_70
+  - first:
+      213: -7684578463418483977
+    second: oak_woods_tileset_71
+  - first:
+      213: -2269748510476728548
+    second: oak_woods_tileset_72
+  - first:
+      213: 460626995189142119
+    second: oak_woods_tileset_73
+  - first:
+      213: -8415016506141519867
+    second: oak_woods_tileset_74
+  - first:
+      213: -5750834421926169099
+    second: oak_woods_tileset_75
+  - first:
+      213: 1854446182364211337
+    second: oak_woods_tileset_76
+  - first:
+      213: -8962672559874298175
+    second: oak_woods_tileset_77
+  - first:
+      213: -2364403640700950918
+    second: oak_woods_tileset_78
+  - first:
+      213: -3515492812702597985
+    second: oak_woods_tileset_79
+  - first:
+      213: -8458288880000279157
+    second: oak_woods_tileset_80
+  - first:
+      213: 1541051631041803378
+    second: oak_woods_tileset_81
+  - first:
+      213: -3235843627221339631
+    second: oak_woods_tileset_82
+  - first:
+      213: -7768954619346984885
+    second: oak_woods_tileset_83
+  - first:
+      213: 2857375545464386898
+    second: oak_woods_tileset_84
+  - first:
+      213: -4358354872422113350
+    second: oak_woods_tileset_85
+  - first:
+      213: -2992633197694085848
+    second: oak_woods_tileset_86
+  - first:
+      213: -702228465178732620
+    second: oak_woods_tileset_87
+  - first:
+      213: 4073427599567000734
+    second: oak_woods_tileset_88
+  - first:
+      213: -2657910679481502046
+    second: oak_woods_tileset_89
+  - first:
+      213: -1865002105044051045
+    second: oak_woods_tileset_90
+  - first:
+      213: -109460921728557811
+    second: oak_woods_tileset_91
+  - first:
+      213: 2480829871526670615
+    second: oak_woods_tileset_92
+  - first:
+      213: -1225092097973283469
+    second: oak_woods_tileset_93
+  - first:
+      213: -286576934953652135
+    second: oak_woods_tileset_94
+  - first:
+      213: -8027646553857945602
+    second: oak_woods_tileset_95
+  - first:
+      213: -2014905844689439288
+    second: oak_woods_tileset_96
+  - first:
+      213: 8422684699036033798
+    second: oak_woods_tileset_97
+  - first:
+      213: 4144958785046996986
+    second: oak_woods_tileset_98
+  - first:
+      213: -5222172867671493900
+    second: oak_woods_tileset_99
+  - first:
+      213: -7220608933011453090
+    second: oak_woods_tileset_100
+  - first:
+      213: -3658964883525327469
+    second: oak_woods_tileset_101
+  - first:
+      213: -8130546643177710898
+    second: oak_woods_tileset_102
+  - first:
+      213: -6895172380984704533
+    second: oak_woods_tileset_103
+  - first:
+      213: -6844510698746059881
+    second: oak_woods_tileset_104
+  - first:
+      213: 4316056292286227427
+    second: oak_woods_tileset_105
+  - first:
+      213: 4936396294387829308
+    second: oak_woods_tileset_106
+  - first:
+      213: -283469470481005559
+    second: oak_woods_tileset_107
+  - first:
+      213: 3832878397266801728
+    second: oak_woods_tileset_108
+  - first:
+      213: 6231740120555535505
+    second: oak_woods_tileset_109
+  - first:
+      213: 3281392119463189012
+    second: oak_woods_tileset_110
+  - first:
+      213: 6638471310781981121
+    second: oak_woods_tileset_111
+  - first:
+      213: 8693682832095190131
+    second: oak_woods_tileset_112
+  - first:
+      213: -3155886763177403366
+    second: oak_woods_tileset_113
+  - first:
+      213: -5456483779928883952
+    second: oak_woods_tileset_114
+  - first:
+      213: -4315197017821843695
+    second: oak_woods_tileset_115
+  - first:
+      213: -2771481569902469458
+    second: oak_woods_tileset_116
+  - first:
+      213: 877117150864595450
+    second: oak_woods_tileset_117
+  - first:
+      213: 3797684212678120184
+    second: oak_woods_tileset_118
+  - first:
+      213: 6514513634935275306
+    second: oak_woods_tileset_119
+  - first:
+      213: 8642642791840695363
+    second: oak_woods_tileset_120
+  - first:
+      213: 6538400135989127795
+    second: oak_woods_tileset_121
+  - first:
+      213: 8334187808466630481
+    second: oak_woods_tileset_122
+  - first:
+      213: -257372608719481689
+    second: oak_woods_tileset_123
+  - first:
+      213: -4187073331296189547
+    second: oak_woods_tileset_124
+  - first:
+      213: -7850060334538415494
+    second: oak_woods_tileset_125
+  - first:
+      213: -5616186655158043856
+    second: oak_woods_tileset_126
+  - first:
+      213: -17632505048784794
+    second: oak_woods_tileset_127
+  - first:
+      213: 1848865585370893660
+    second: oak_woods_tileset_128
+  - first:
+      213: -5799889899872084600
+    second: oak_woods_tileset_129
+  - first:
+      213: -170786960333132868
+    second: oak_woods_tileset_130
+  - first:
+      213: -2084742891427181040
+    second: oak_woods_tileset_131
+  - first:
+      213: 2109492107442152187
+    second: oak_woods_tileset_132
+  - first:
+      213: -2139258586582642770
+    second: oak_woods_tileset_133
+  - first:
+      213: 6123709242279262822
+    second: oak_woods_tileset_134
+  - first:
+      213: 120597742884412013
+    second: oak_woods_tileset_135
+  - first:
+      213: -9149170897398691457
+    second: oak_woods_tileset_136
+  - first:
+      213: 1533036576895572992
+    second: oak_woods_tileset_137
+  - first:
+      213: -2026212652225841209
+    second: oak_woods_tileset_138
+  - first:
+      213: -6684313750030436678
+    second: oak_woods_tileset_139
+  - first:
+      213: -2767065389747670807
+    second: oak_woods_tileset_140
+  - first:
+      213: 2215577990232644817
+    second: oak_woods_tileset_141
+  - first:
+      213: 8675147086323525742
+    second: oak_woods_tileset_142
+  - first:
+      213: 160598413691594048
+    second: oak_woods_tileset_143
+  - first:
+      213: 3358727700942501991
+    second: oak_woods_tileset_144
+  - first:
+      213: 3908132659224503446
+    second: oak_woods_tileset_145
+  - first:
+      213: -7736066018642244678
+    second: oak_woods_tileset_146
+  - first:
+      213: 8692649047890516342
+    second: oak_woods_tileset_147
+  - first:
+      213: -1444894423184863682
+    second: oak_woods_tileset_148
+  - first:
+      213: 3051579440156781799
+    second: oak_woods_tileset_149
+  - first:
+      213: -1100337638624667353
+    second: oak_woods_tileset_150
+  - first:
+      213: 865385488753914225
+    second: oak_woods_tileset_151
+  - first:
+      213: 3479347727012542144
+    second: oak_woods_tileset_152
+  - first:
+      213: -7329681133757034252
+    second: oak_woods_tileset_153
+  - first:
+      213: 3324418865625996644
+    second: oak_woods_tileset_154
+  - first:
+      213: -8420065780294890409
+    second: oak_woods_tileset_155
+  - first:
+      213: 688012716148966950
+    second: oak_woods_tileset_156
+  - first:
+      213: -6999249444591118748
+    second: oak_woods_tileset_157
+  - first:
+      213: 5874664621967785285
+    second: oak_woods_tileset_158
+  - first:
+      213: 6511750890466837548
+    second: oak_woods_tileset_159
+  - first:
+      213: 5396379857250590157
+    second: oak_woods_tileset_160
+  - first:
+      213: -1929291525073276999
+    second: oak_woods_tileset_161
+  - first:
+      213: 5433022879033678739
+    second: oak_woods_tileset_162
+  - first:
+      213: 6009417434186540975
+    second: oak_woods_tileset_163
+  - first:
+      213: -8925248803559068150
+    second: oak_woods_tileset_164
+  - first:
+      213: 2779307486348100651
+    second: oak_woods_tileset_165
+  - first:
+      213: -4409013291358964387
+    second: oak_woods_tileset_166
+  - first:
+      213: 215462179318078436
+    second: oak_woods_tileset_167
+  - first:
+      213: -7619343133284231718
+    second: oak_woods_tileset_168
+  - first:
+      213: 5572213656422556840
+    second: oak_woods_tileset_169
+  - first:
+      213: -8673728559516958931
+    second: oak_woods_tileset_170
+  - first:
+      213: -4724454206237076711
+    second: oak_woods_tileset_171
+  - first:
+      213: -630394366960855772
+    second: oak_woods_tileset_172
+  - first:
+      213: -503268228113066818
+    second: oak_woods_tileset_173
+  - first:
+      213: 8600080201871035790
+    second: oak_woods_tileset_174
+  - first:
+      213: 8017614452343677499
+    second: oak_woods_tileset_175
+  - first:
+      213: 8743057130274913175
+    second: oak_woods_tileset_176
+  - first:
+      213: -2547662574780947637
+    second: oak_woods_tileset_177
+  - first:
+      213: 7821098322493694174
+    second: oak_woods_tileset_178
+  - first:
+      213: -5848630835568695752
+    second: oak_woods_tileset_179
+  - first:
+      213: 4699733790402024481
+    second: oak_woods_tileset_180
+  - first:
+      213: -6835206302677419030
+    second: oak_woods_tileset_181
+  - first:
+      213: 4465931417114026808
+    second: oak_woods_tileset_182
+  - first:
+      213: 2228707138748993014
+    second: oak_woods_tileset_183
+  - first:
+      213: -4295880130933365413
+    second: oak_woods_tileset_184
+  - first:
+      213: -1599456913811680924
+    second: oak_woods_tileset_185
+  - first:
+      213: 7946621754984997719
+    second: oak_woods_tileset_186
+  - first:
+      213: 1093046873429255515
+    second: oak_woods_tileset_187
+  - first:
+      213: -8326531724892994964
+    second: oak_woods_tileset_188
+  - first:
+      213: 1534011626851621056
+    second: oak_woods_tileset_189
+  - first:
+      213: -7113553322049440742
+    second: oak_woods_tileset_190
+  - first:
+      213: 1964810740092971105
+    second: oak_woods_tileset_191
+  - first:
+      213: 8231439458383093198
+    second: oak_woods_tileset_192
+  - first:
+      213: -2476520332756369180
+    second: oak_woods_tileset_193
+  - first:
+      213: 7448033736313925767
+    second: oak_woods_tileset_194
+  - first:
+      213: -6442110314897677817
+    second: oak_woods_tileset_195
+  - first:
+      213: 382306062473338874
+    second: oak_woods_tileset_196
+  - first:
+      213: -9013095382712799169
+    second: oak_woods_tileset_197
+  - first:
+      213: -4307279573675462552
+    second: oak_woods_tileset_198
+  - first:
+      213: -2545041134245355133
+    second: oak_woods_tileset_199
+  - first:
+      213: -6493849050699259609
+    second: oak_woods_tileset_200
+  - first:
+      213: 313981568961913914
+    second: oak_woods_tileset_201
+  - first:
+      213: -5116835976331561988
+    second: oak_woods_tileset_202
+  - first:
+      213: 8343446365312558895
+    second: oak_woods_tileset_203
+  - first:
+      213: 2965568352413582461
+    second: oak_woods_tileset_204
+  - first:
+      213: 4834159497206041316
+    second: oak_woods_tileset_205
+  - first:
+      213: -1162280797966112048
+    second: oak_woods_tileset_206
+  - first:
+      213: 7614501976491454512
+    second: oak_woods_tileset_207
+  - first:
+      213: -5046169696960779151
+    second: oak_woods_tileset_208
+  - first:
+      213: 8088808509297255075
+    second: oak_woods_tileset_209
+  - first:
+      213: -7723277820602156236
+    second: oak_woods_tileset_210
+  - first:
+      213: -8612924421770257949
+    second: oak_woods_tileset_211
+  - first:
+      213: 1898544221907206908
+    second: oak_woods_tileset_212
+  - first:
+      213: 4605450869578975390
+    second: oak_woods_tileset_213
+  - first:
+      213: -8287814622631579004
+    second: oak_woods_tileset_214
+  - first:
+      213: 6925989096482534597
+    second: oak_woods_tileset_215
+  - first:
+      213: -4395415968830989801
+    second: oak_woods_tileset_216
+  - first:
+      213: -5568634508401332782
+    second: oak_woods_tileset_217
+  - first:
+      213: 4792186517640438864
+    second: oak_woods_tileset_218
+  - first:
+      213: -5337055249381156749
+    second: oak_woods_tileset_219
+  - first:
+      213: 5834919311840860699
+    second: oak_woods_tileset_220
+  - first:
+      213: 4311871971699028227
+    second: oak_woods_tileset_221
+  - first:
+      213: 7312975867625408683
+    second: oak_woods_tileset_222
+  - first:
+      213: 1813542961147877843
+    second: oak_woods_tileset_223
+  - first:
+      213: 728479295144633876
+    second: oak_woods_tileset_224
+  - first:
+      213: 2727531155527447713
+    second: oak_woods_tileset_225
+  - first:
+      213: -6594881834686940865
+    second: oak_woods_tileset_226
+  - first:
+      213: -4882103425586180480
+    second: oak_woods_tileset_227
+  - first:
+      213: -6144630944367318094
+    second: oak_woods_tileset_228
+  - first:
+      213: -6283303941914972262
+    second: oak_woods_tileset_229
+  - first:
+      213: 6157587238061295127
+    second: oak_woods_tileset_230
+  - first:
+      213: -5754029150273102564
+    second: oak_woods_tileset_231
+  - first:
+      213: -4398140519878475236
+    second: oak_woods_tileset_232
+  - first:
+      213: 5990209651701281566
+    second: oak_woods_tileset_233
+  - first:
+      213: 1479260840315870500
+    second: oak_woods_tileset_234
+  - first:
+      213: -6273030733428344636
+    second: oak_woods_tileset_235
+  - first:
+      213: 1189347127075729772
+    second: oak_woods_tileset_236
+  - first:
+      213: 2131378371292026361
+    second: oak_woods_tileset_237
+  - first:
+      213: -7872198345996221301
+    second: oak_woods_tileset_238
+  - first:
+      213: 3937702565193191235
+    second: oak_woods_tileset_239
+  - first:
+      213: 7431494032149360259
+    second: oak_woods_tileset_240
+  - first:
+      213: 171740931045486667
+    second: oak_woods_tileset_241
+  - first:
+      213: -6858742865685152134
+    second: oak_woods_tileset_242
+  - first:
+      213: -261633771028663626
+    second: oak_woods_tileset_243
+  - first:
+      213: 1039872006217418032
+    second: oak_woods_tileset_244
+  - first:
+      213: -8149957629421059729
+    second: oak_woods_tileset_245
+  - first:
+      213: 3704557650129166457
+    second: oak_woods_tileset_246
+  - first:
+      213: 2021312656162658235
+    second: oak_woods_tileset_247
+  - first:
+      213: -490423113786043645
+    second: oak_woods_tileset_248
+  - first:
+      213: -6959538385471626695
+    second: oak_woods_tileset_249
+  - first:
+      213: -2251883069583426750
+    second: oak_woods_tileset_250
+  - first:
+      213: -1955877277992624487
+    second: oak_woods_tileset_251
+  - first:
+      213: -210194812359599643
+    second: oak_woods_tileset_252
+  - first:
+      213: -3650362405521528249
+    second: oak_woods_tileset_253
+  - first:
+      213: -1354146913828444365
+    second: oak_woods_tileset_254
+  - first:
+      213: -3691225809969391131
+    second: oak_woods_tileset_255
+  - first:
+      213: 8008329050698918276
+    second: oak_woods_tileset_256
+  - first:
+      213: -7650725018394011921
+    second: oak_woods_tileset_257
+  - first:
+      213: 4382125365864548463
+    second: oak_woods_tileset_258
+  - first:
+      213: 5717624038677166645
+    second: oak_woods_tileset_259
+  - first:
+      213: -8436184488981328593
+    second: oak_woods_tileset_260
+  - first:
+      213: -9155421503389231951
+    second: oak_woods_tileset_261
+  - first:
+      213: 752112764849753025
+    second: oak_woods_tileset_262
+  - first:
+      213: 186147002878802628
+    second: oak_woods_tileset_263
+  - first:
+      213: 8390566754770970427
+    second: oak_woods_tileset_264
+  - first:
+      213: 5873769001725390668
+    second: oak_woods_tileset_265
+  - first:
+      213: 7325068514853775087
+    second: oak_woods_tileset_266
+  - first:
+      213: 3885376388204851487
+    second: oak_woods_tileset_267
+  - first:
+      213: 9043158593672159137
+    second: oak_woods_tileset_268
+  - first:
+      213: -76904267744378036
+    second: oak_woods_tileset_269
+  - first:
+      213: -7087582518136504300
+    second: oak_woods_tileset_270
+  - first:
+      213: 8013158258984003853
+    second: oak_woods_tileset_271
+  - first:
+      213: 6784637947658699131
+    second: oak_woods_tileset_272
+  - first:
+      213: -3463746672658389969
+    second: oak_woods_tileset_273
+  - first:
+      213: -7430518535231969103
+    second: oak_woods_tileset_274
+  - first:
+      213: 2261049562651626035
+    second: oak_woods_tileset_275
+  - first:
+      213: 6810091635755213247
+    second: oak_woods_tileset_276
+  - first:
+      213: -6454855376874330182
+    second: oak_woods_tileset_277
+  - first:
+      213: -5004917336938506343
+    second: oak_woods_tileset_278
+  - first:
+      213: 2548784179595260291
+    second: oak_woods_tileset_279
+  - first:
+      213: -4938513138599341498
+    second: oak_woods_tileset_280
+  - first:
+      213: 3931073395455949629
+    second: oak_woods_tileset_281
+  - first:
+      213: 2234789294101961765
+    second: oak_woods_tileset_282
+  - first:
+      213: 1011877179511145105
+    second: oak_woods_tileset_283
+  - first:
+      213: 2665309414104483482
+    second: oak_woods_tileset_284
+  - first:
+      213: 7491014236778889210
+    second: oak_woods_tileset_285
+  - first:
+      213: -8324173662531433291
+    second: oak_woods_tileset_286
+  - first:
+      213: -3077071692654034483
+    second: oak_woods_tileset_287
+  - first:
+      213: 5786447296247024966
+    second: oak_woods_tileset_288
+  - first:
+      213: 5788850933000993931
+    second: oak_woods_tileset_289
+  - first:
+      213: -4937088797147823999
+    second: oak_woods_tileset_290
+  - first:
+      213: 3560175335096523453
+    second: oak_woods_tileset_291
+  - first:
+      213: -2484930387273757532
+    second: oak_woods_tileset_292
+  - first:
+      213: -4404936077183293870
+    second: oak_woods_tileset_293
+  - first:
+      213: 9122853263477812181
+    second: oak_woods_tileset_294
+  - first:
+      213: 9041928189442575419
+    second: oak_woods_tileset_295
+  - first:
+      213: 3426693162831267849
+    second: oak_woods_tileset_296
+  - first:
+      213: 1891436425878106129
+    second: oak_woods_tileset_297
+  - first:
+      213: 5720527684774596139
+    second: oak_woods_tileset_298
+  - first:
+      213: 2296385259534839275
+    second: oak_woods_tileset_299
+  - first:
+      213: 4887162071088379668
+    second: oak_woods_tileset_300
+  - first:
+      213: -2143387443725926960
+    second: oak_woods_tileset_301
+  - first:
+      213: -5858776941778547314
+    second: oak_woods_tileset_302
+  - first:
+      213: 8096072939308501556
+    second: oak_woods_tileset_303
+  - first:
+      213: -2711209441330678083
+    second: oak_woods_tileset_304
+  - first:
+      213: -57990974559835585
+    second: oak_woods_tileset_305
+  - first:
+      213: 3632314961909692817
+    second: oak_woods_tileset_306
+  - first:
+      213: -72488524968620740
+    second: oak_woods_tileset_307
+  - first:
+      213: 7423678638050920033
+    second: oak_woods_tileset_308
+  - first:
+      213: 3591894628680141370
+    second: oak_woods_tileset_309
+  - first:
+      213: -8875380231162524764
+    second: oak_woods_tileset_310
+  - first:
+      213: -7089529904670326079
+    second: oak_woods_tileset_311
+  - first:
+      213: 3673690590499309973
+    second: oak_woods_tileset_312
+  - first:
+      213: -4004491794591822550
+    second: oak_woods_tileset_313
+  - first:
+      213: 8984511950485668542
+    second: oak_woods_tileset_314
+  - first:
+      213: -8293785591494108748
+    second: oak_woods_tileset_315
+  - first:
+      213: 9135677876343020946
+    second: oak_woods_tileset_316
+  - first:
+      213: 6105090691581189070
+    second: oak_woods_tileset_317
+  - first:
+      213: -1730339975392243307
+    second: oak_woods_tileset_318
+  - first:
+      213: -7772474086831956796
+    second: oak_woods_tileset_319
+  - first:
+      213: 7096475281641534616
+    second: oak_woods_tileset_320
+  - first:
+      213: -6465237607798794240
+    second: oak_woods_tileset_321
+  - first:
+      213: -8881884717453861897
+    second: oak_woods_tileset_322
+  - first:
+      213: -548642869209446315
+    second: oak_woods_tileset_323
+  - first:
+      213: 6924962311668577406
+    second: oak_woods_tileset_324
+  - first:
+      213: -7952995349665525257
+    second: oak_woods_tileset_325
+  - first:
+      213: -3363280804205827921
+    second: oak_woods_tileset_326
+  - first:
+      213: -8165247445046566771
+    second: oak_woods_tileset_327
+  - first:
+      213: 2572752436567725553
+    second: oak_woods_tileset_328
+  - first:
+      213: 1801226741334908866
+    second: oak_woods_tileset_329
+  - first:
+      213: 633896464668678652
+    second: oak_woods_tileset_330
+  - first:
+      213: -1077066559320757397
+    second: oak_woods_tileset_331
+  - first:
+      213: 2822293973009987678
+    second: oak_woods_tileset_332
+  - first:
+      213: -2367016170590729792
+    second: oak_woods_tileset_333
+  - first:
+      213: -5486717614787858827
+    second: oak_woods_tileset_334
+  - first:
+      213: -7478701308052683838
+    second: oak_woods_tileset_335
+  - first:
+      213: -955458643611103073
+    second: oak_woods_tileset_336
+  - first:
+      213: -3522491425290318340
+    second: oak_woods_tileset_337
+  - first:
+      213: 6077138805076407417
+    second: oak_woods_tileset_338
+  - first:
+      213: -1237560559474751308
+    second: oak_woods_tileset_339
+  - first:
+      213: -8574378391825577695
+    second: oak_woods_tileset_340
+  - first:
+      213: -3181517643306907167
+    second: oak_woods_tileset_341
+  - first:
+      213: 4115046956845923856
+    second: oak_woods_tileset_342
+  - first:
+      213: -7893851277999870014
+    second: oak_woods_tileset_343
+  - first:
+      213: 2881480890859697576
+    second: oak_woods_tileset_344
+  - first:
+      213: 7571863414401741117
+    second: oak_woods_tileset_345
+  - first:
+      213: 8527906077622176801
+    second: oak_woods_tileset_346
+  - first:
+      213: 6505585458212074718
+    second: oak_woods_tileset_347
+  - first:
+      213: 2497344362829018096
+    second: oak_woods_tileset_348
+  - first:
+      213: -2870775354715429490
+    second: oak_woods_tileset_349
+  - first:
+      213: 4869961363393644056
+    second: oak_woods_tileset_350
+  - first:
+      213: 1115373651805942367
+    second: oak_woods_tileset_351
+  - first:
+      213: -3160410038873740920
+    second: oak_woods_tileset_352
+  - first:
+      213: 5696811427735440982
+    second: oak_woods_tileset_353
+  - first:
+      213: 4400119451296193076
+    second: oak_woods_tileset_354
+  - first:
+      213: -6737658072111403648
+    second: oak_woods_tileset_355
+  - first:
+      213: 6180290871484673276
+    second: oak_woods_tileset_356
+  - first:
+      213: -5565253935439741406
+    second: oak_woods_tileset_357
+  - first:
+      213: -5289599741332921520
+    second: oak_woods_tileset_358
+  - first:
+      213: 9116407717747640516
+    second: oak_woods_tileset_359
+  - first:
+      213: 31754172616314466
+    second: oak_woods_tileset_360
+  - first:
+      213: 8700651069465875048
+    second: oak_woods_tileset_361
+  - first:
+      213: 5718474235265321404
+    second: oak_woods_tileset_362
+  - first:
+      213: 1702302243685898284
+    second: oak_woods_tileset_363
+  - first:
+      213: 3311430880247778780
+    second: oak_woods_tileset_364
+  - first:
+      213: 6385003663419896635
+    second: oak_woods_tileset_365
+  - first:
+      213: 4351988890112688274
+    second: oak_woods_tileset_366
+  - first:
+      213: -3446095351487966752
+    second: oak_woods_tileset_367
+  - first:
+      213: -1493010252649680703
+    second: oak_woods_tileset_368
+  - first:
+      213: -2660693838585437110
+    second: oak_woods_tileset_369
+  - first:
+      213: -2345842199400750180
+    second: oak_woods_tileset_370
+  - first:
+      213: -5751611900758515316
+    second: oak_woods_tileset_371
+  - first:
+      213: 5377836714518384505
+    second: oak_woods_tileset_372
+  - first:
+      213: -5853231438959950298
+    second: oak_woods_tileset_373
+  - first:
+      213: -4927265683975494364
+    second: oak_woods_tileset_374
+  - first:
+      213: 1034583927407273821
+    second: oak_woods_tileset_375
+  - first:
+      213: -532194550686772747
+    second: oak_woods_tileset_376
+  - first:
+      213: 7374173516612003770
+    second: oak_woods_tileset_377
+  - first:
+      213: 2902980280732919700
+    second: oak_woods_tileset_378
+  - first:
+      213: 3111531478476553696
+    second: oak_woods_tileset_379
+  - first:
+      213: -7816022099238000054
+    second: oak_woods_tileset_380
+  - first:
+      213: -3581280182892630808
+    second: oak_woods_tileset_381
+  - first:
+      213: -4384286042194840691
+    second: oak_woods_tileset_382
+  - first:
+      213: -3766430217607387008
+    second: oak_woods_tileset_383
+  - first:
+      213: -4677897681062069807
+    second: oak_woods_tileset_384
+  - first:
+      213: -584494220685747081
+    second: oak_woods_tileset_385
+  - first:
+      213: 8286102902505964336
+    second: oak_woods_tileset_386
+  - first:
+      213: 872120828997921717
+    second: oak_woods_tileset_387
+  - first:
+      213: 8879207976096688941
+    second: oak_woods_tileset_388
+  - first:
+      213: 5099916349491279042
+    second: oak_woods_tileset_389
+  - first:
+      213: -3255805109138234042
+    second: oak_woods_tileset_390
+  - first:
+      213: -7979968572222035867
+    second: oak_woods_tileset_391
+  - first:
+      213: -1831296076362446749
+    second: oak_woods_tileset_392
+  - first:
+      213: -7511443522036289644
+    second: oak_woods_tileset_393
+  - first:
+      213: 3453999296983848725
+    second: oak_woods_tileset_394
+  - first:
+      213: -193935582821832536
+    second: oak_woods_tileset_395
+  - first:
+      213: 5515158818301201625
+    second: oak_woods_tileset_396
+  - first:
+      213: 3335271691771998012
+    second: oak_woods_tileset_397
+  - first:
+      213: -6861895002381380622
+    second: oak_woods_tileset_398
+  - first:
+      213: 1651260090015090646
+    second: oak_woods_tileset_399
+  - first:
+      213: -3525302986492175927
+    second: oak_woods_tileset_400
+  - first:
+      213: -4899270608446768262
+    second: oak_woods_tileset_401
+  - first:
+      213: 5985343024402787129
+    second: oak_woods_tileset_402
+  - first:
+      213: 9035568772166125056
+    second: oak_woods_tileset_403
+  - first:
+      213: -9205000456656634686
+    second: oak_woods_tileset_404
+  - first:
+      213: -8917918199246722963
+    second: oak_woods_tileset_405
+  - first:
+      213: -2424657489203880379
+    second: oak_woods_tileset_406
+  - first:
+      213: -4973438529935547548
+    second: oak_woods_tileset_407
+  - first:
+      213: 3117590280179753692
+    second: oak_woods_tileset_408
+  - first:
+      213: -1861102247046571744
+    second: oak_woods_tileset_409
+  - first:
+      213: -6227788513479398472
+    second: oak_woods_tileset_410
+  - first:
+      213: -4121623865323642306
+    second: oak_woods_tileset_411
+  - first:
+      213: -7884519641421205719
+    second: oak_woods_tileset_412
+  - first:
+      213: -6201658441405523615
+    second: oak_woods_tileset_413
+  - first:
+      213: -1799188891716935845
+    second: oak_woods_tileset_414
+  - first:
+      213: 3128135724469117447
+    second: oak_woods_tileset_415
+  - first:
+      213: -8309992101557349210
+    second: oak_woods_tileset_416
+  - first:
+      213: 7933542940927915956
+    second: oak_woods_tileset_417
+  - first:
+      213: 1686514300072869995
+    second: oak_woods_tileset_418
+  - first:
+      213: -2088545701430466133
+    second: oak_woods_tileset_419
+  - first:
+      213: -3205091075194281890
+    second: oak_woods_tileset_420
+  - first:
+      213: -1329198916585504868
+    second: oak_woods_tileset_421
+  - first:
+      213: -3190762583159549399
+    second: oak_woods_tileset_422
+  - first:
+      213: -1572948362208687337
+    second: oak_woods_tileset_423
+  - first:
+      213: -2239470984249115451
+    second: oak_woods_tileset_424
+  - first:
+      213: 4221160997072574212
+    second: oak_woods_tileset_425
+  - first:
+      213: -4171792839422357281
+    second: oak_woods_tileset_426
+  - first:
+      213: -9142434096921178335
+    second: oak_woods_tileset_427
+  - first:
+      213: 8574526925033581344
+    second: oak_woods_tileset_428
+  - first:
+      213: -1397094114046503646
+    second: oak_woods_tileset_429
+  - first:
+      213: 8252671703079294328
+    second: oak_woods_tileset_430
+  - first:
+      213: 5817067193822499104
+    second: oak_woods_tileset_431
+  - first:
+      213: 7575439444177145010
+    second: oak_woods_tileset_432
+  - first:
+      213: 964713623588479852
+    second: oak_woods_tileset_433
+  - first:
+      213: -374889528795372588
+    second: oak_woods_tileset_434
+  - first:
+      213: 4883578726006914839
+    second: oak_woods_tileset_435
+  - first:
+      213: 1125974343174200916
+    second: oak_woods_tileset_436
+  - first:
+      213: -3038294492863585966
+    second: oak_woods_tileset_437
+  - first:
+      213: -7684741664614821991
+    second: oak_woods_tileset_438
+  - first:
+      213: 7719204976795654784
+    second: oak_woods_tileset_439
+  - first:
+      213: -1296241732525704567
+    second: oak_woods_tileset_440
+  - first:
+      213: 2112398589653452336
+    second: oak_woods_tileset_441
+  - first:
+      213: -3808205809182171590
+    second: oak_woods_tileset_442
+  - first:
+      213: -5297039891550755993
+    second: oak_woods_tileset_443
+  - first:
+      213: -1611810193460117215
+    second: oak_woods_tileset_444
+  - first:
+      213: 8009856745145316429
+    second: oak_woods_tileset_445
+  - first:
+      213: -3829240036162276620
+    second: oak_woods_tileset_446
+  - first:
+      213: 7394777121665731122
+    second: oak_woods_tileset_447
+  - first:
+      213: -7957643787648267014
+    second: oak_woods_tileset_448
+  - first:
+      213: 2361722457166857888
+    second: oak_woods_tileset_449
+  - first:
+      213: -1407297571013732640
+    second: oak_woods_tileset_450
+  - first:
+      213: -3038685874211952638
+    second: oak_woods_tileset_451
+  - first:
+      213: -3408100467647652012
+    second: oak_woods_tileset_452
+  - first:
+      213: 4746093671236143805
+    second: oak_woods_tileset_453
+  - first:
+      213: -4773573717998661406
+    second: oak_woods_tileset_454
+  - first:
+      213: -5487647838937660427
+    second: oak_woods_tileset_455
+  - first:
+      213: 3744014854120589227
+    second: oak_woods_tileset_456
+  - first:
+      213: 4047050284047587724
+    second: oak_woods_tileset_457
+  - first:
+      213: 8279431115967964150
+    second: oak_woods_tileset_458
+  - first:
+      213: -4793323540327799560
+    second: oak_woods_tileset_459
+  - first:
+      213: 17337266153161967
+    second: oak_woods_tileset_460
+  - first:
+      213: -2503671273036608945
+    second: oak_woods_tileset_461
+  - first:
+      213: 2503869853585640592
+    second: oak_woods_tileset_462
+  - first:
+      213: -4920870967046536537
+    second: oak_woods_tileset_463
+  - first:
+      213: 1534091812875127945
+    second: oak_woods_tileset_464
+  - first:
+      213: -6902260431324384987
+    second: oak_woods_tileset_465
+  - first:
+      213: 9075619164531688078
+    second: oak_woods_tileset_466
+  - first:
+      213: -1545288995444997811
+    second: oak_woods_tileset_467
+  - first:
+      213: 7783952889962431340
+    second: oak_woods_tileset_468
+  - first:
+      213: -3335367249021345065
+    second: oak_woods_tileset_469
+  - first:
+      213: -4422515536708450253
+    second: oak_woods_tileset_470
+  - first:
+      213: 2649667418343013034
+    second: oak_woods_tileset_471
+  - first:
+      213: -4928082332046244394
+    second: oak_woods_tileset_472
+  - first:
+      213: -7259747469385632774
+    second: oak_woods_tileset_473
+  - first:
+      213: 5631589284927420586
+    second: oak_woods_tileset_474
+  - first:
+      213: 8054140887912891740
+    second: oak_woods_tileset_475
+  - first:
+      213: -5595602065159603105
+    second: oak_woods_tileset_476
+  - first:
+      213: -4894531141760382761
+    second: oak_woods_tileset_477
+  - first:
+      213: 3165953268794326171
+    second: oak_woods_tileset_478
+  - first:
+      213: 2053094759395362537
+    second: oak_woods_tileset_479
+  - first:
+      213: -9201923806048249521
+    second: oak_woods_tileset_480
+  - first:
+      213: 6017935454666694134
+    second: oak_woods_tileset_481
+  - first:
+      213: -5908061638384229041
+    second: oak_woods_tileset_482
+  - first:
+      213: -2068500013140764161
+    second: oak_woods_tileset_483
+  - first:
+      213: 3022724309858596513
+    second: oak_woods_tileset_484
+  - first:
+      213: 7959726994792381904
+    second: oak_woods_tileset_485
+  - first:
+      213: -2244991574152310057
+    second: oak_woods_tileset_486
+  - first:
+      213: -1680643698704079543
+    second: oak_woods_tileset_487
+  - first:
+      213: 8814689406051317014
+    second: oak_woods_tileset_488
+  - first:
+      213: -6916525249961596417
+    second: oak_woods_tileset_489
+  - first:
+      213: 473033777586970878
+    second: oak_woods_tileset_490
+  - first:
+      213: -2222294770995192729
+    second: oak_woods_tileset_491
+  - first:
+      213: 6001205512393374
+    second: oak_woods_tileset_492
+  - first:
+      213: 4135545299087857138
+    second: oak_woods_tileset_493
+  - first:
+      213: 1033731414451348267
+    second: oak_woods_tileset_494
+  - first:
+      213: 5601888022448263088
+    second: oak_woods_tileset_495
+  - first:
+      213: -2887831063905947407
+    second: oak_woods_tileset_496
+  - first:
+      213: 5050544390679991273
+    second: oak_woods_tileset_497
+  - first:
+      213: -2215936436059210433
+    second: oak_woods_tileset_498
+  - first:
+      213: 3884010396152481611
+    second: oak_woods_tileset_499
+  - first:
+      213: 4910359224860777784
+    second: oak_woods_tileset_500
+  - first:
+      213: 2606265253147554760
+    second: oak_woods_tileset_501
+  - first:
+      213: -6094652450833618995
+    second: oak_woods_tileset_502
+  - first:
+      213: 7662121842904028254
+    second: oak_woods_tileset_503
+  - first:
+      213: -4734179038493684364
+    second: oak_woods_tileset_504
+  - first:
+      213: -6437416205039684742
+    second: oak_woods_tileset_505
+  - first:
+      213: 2324374739516593191
+    second: oak_woods_tileset_506
+  - first:
+      213: -1019002581391713531
+    second: oak_woods_tileset_507
+  - first:
+      213: -6401664709042967009
+    second: oak_woods_tileset_508
+  - first:
+      213: -6159212481741350639
+    second: oak_woods_tileset_509
+  - first:
+      213: 5154625591005721852
+    second: oak_woods_tileset_510
+  - first:
+      213: -4461567249413273158
+    second: oak_woods_tileset_511
+  - first:
+      213: 3549802919519820201
+    second: oak_woods_tileset_512
+  - first:
+      213: 4119899187827016862
+    second: oak_woods_tileset_513
+  - first:
+      213: 1751706279686872151
+    second: oak_woods_tileset_514
+  - first:
+      213: 8109047021179750776
+    second: oak_woods_tileset_515
+  - first:
+      213: 8394428387091860815
+    second: oak_woods_tileset_516
+  - first:
+      213: 499426583169703226
+    second: oak_woods_tileset_517
+  - first:
+      213: 1680516284764243315
+    second: oak_woods_tileset_518
+  - first:
+      213: -2884613479457989723
+    second: oak_woods_tileset_519
+  - first:
+      213: 6266475838851084485
+    second: oak_woods_tileset_520
+  - first:
+      213: 4580835307488143569
+    second: oak_woods_tileset_521
+  - first:
+      213: 8593855877824439798
+    second: oak_woods_tileset_522
+  - first:
+      213: -1562905236104229017
+    second: oak_woods_tileset_523
+  - first:
+      213: 8684296102215492903
+    second: oak_woods_tileset_524
+  - first:
+      213: -1269866086470684689
+    second: oak_woods_tileset_525
+  - first:
+      213: 22138285136852470
+    second: oak_woods_tileset_526
+  - first:
+      213: 1644796562582164718
+    second: oak_woods_tileset_527
+  - first:
+      213: 2811865043871254162
+    second: oak_woods_tileset_528
+  - first:
+      213: 5079354127603164006
+    second: oak_woods_tileset_529
+  - first:
+      213: -7128980839336167497
+    second: oak_woods_tileset_530
+  - first:
+      213: -1678572170635677927
+    second: oak_woods_tileset_531
+  - first:
+      213: 825607219660647543
+    second: oak_woods_tileset_532
+  - first:
+      213: -4843431962320044399
+    second: oak_woods_tileset_533
+  - first:
+      213: 5767728413240833170
+    second: oak_woods_tileset_534
+  - first:
+      213: 3610378315866220287
+    second: oak_woods_tileset_535
+  - first:
+      213: 5277887395373518949
+    second: oak_woods_tileset_536
+  - first:
+      213: 1951708223477049955
+    second: oak_woods_tileset_537
+  - first:
+      213: -1911079052012169847
+    second: oak_woods_tileset_538
+  - first:
+      213: -6246214674427665787
+    second: oak_woods_tileset_539
+  - first:
+      213: 2249295448031609509
+    second: oak_woods_tileset_540
+  - first:
+      213: -3045307393649482449
+    second: oak_woods_tileset_541
+  - first:
+      213: 8476193032943591421
+    second: oak_woods_tileset_542
+  - first:
+      213: -2501049198559088570
+    second: oak_woods_tileset_543
+  - first:
+      213: -3755389089500308323
+    second: oak_woods_tileset_544
+  - first:
+      213: -4768764789765476688
+    second: oak_woods_tileset_545
+  - first:
+      213: -4583031261999730499
+    second: oak_woods_tileset_546
+  - first:
+      213: 5078523993965764520
+    second: oak_woods_tileset_547
+  - first:
+      213: -4757968771850318842
+    second: oak_woods_tileset_548
+  - first:
+      213: 4835405909316110199
+    second: oak_woods_tileset_549
+  - first:
+      213: 4791283703552606975
+    second: oak_woods_tileset_550
+  - first:
+      213: -8559927364443180886
+    second: oak_woods_tileset_551
+  - first:
+      213: 7118599413001103968
+    second: oak_woods_tileset_552
+  - first:
+      213: -8727070608452677509
+    second: oak_woods_tileset_553
+  - first:
+      213: 3747499083698831560
+    second: oak_woods_tileset_554
+  - first:
+      213: -1653928471186468498
+    second: oak_woods_tileset_555
+  - first:
+      213: -453673918559936142
+    second: oak_woods_tileset_556
+  - first:
+      213: -8338292362107546393
+    second: oak_woods_tileset_557
+  - first:
+      213: -5066963884300973808
+    second: oak_woods_tileset_558
+  - first:
+      213: 8254293410124203147
+    second: oak_woods_tileset_559
+  - first:
+      213: -6178980141482098725
+    second: oak_woods_tileset_560
+  - first:
+      213: -3504797106053996973
+    second: oak_woods_tileset_561
+  - first:
+      213: -236583194057718660
+    second: oak_woods_tileset_562
+  - first:
+      213: 6790237604618073041
+    second: oak_woods_tileset_563
+  - first:
+      213: 1656626382781278108
+    second: oak_woods_tileset_564
+  - first:
+      213: 9214639457197068261
+    second: oak_woods_tileset_565
+  - first:
+      213: 1838538113138206818
+    second: oak_woods_tileset_566
+  - first:
+      213: 1094275342500534362
+    second: oak_woods_tileset_567
+  - first:
+      213: 8451679442800492370
+    second: oak_woods_tileset_568
+  - first:
+      213: -5495243635884954511
+    second: oak_woods_tileset_569
+  - first:
+      213: -6597151149989850383
+    second: oak_woods_tileset_570
+  - first:
+      213: -8375119884326173804
+    second: oak_woods_tileset_571
+  - first:
+      213: 7412700477165466030
+    second: oak_woods_tileset_572
+  - first:
+      213: 544494715743100196
+    second: oak_woods_tileset_573
+  - first:
+      213: 7423478991966191140
+    second: oak_woods_tileset_574
+  - first:
+      213: 685801621270478094
+    second: oak_woods_tileset_575
+  - first:
+      213: -7775003437477215340
+    second: oak_woods_tileset_576
+  - first:
+      213: 8975195902174918384
+    second: oak_woods_tileset_577
+  - first:
+      213: -7678940927575847364
+    second: oak_woods_tileset_578
+  - first:
+      213: 4750471453103364202
+    second: oak_woods_tileset_579
+  - first:
+      213: -530557287548242920
+    second: oak_woods_tileset_580
+  - first:
+      213: 6670187471684590560
+    second: oak_woods_tileset_581
+  - first:
+      213: -9038651338694928236
+    second: oak_woods_tileset_582
+  - first:
+      213: 703521167891488713
+    second: oak_woods_tileset_583
+  - first:
+      213: 6668947181328159681
+    second: oak_woods_tileset_584
+  - first:
+      213: -7842114064035112720
+    second: oak_woods_tileset_585
+  - first:
+      213: 3821008777064408742
+    second: oak_woods_tileset_586
+  - first:
+      213: 1990390298168335026
+    second: oak_woods_tileset_587
+  - first:
+      213: 5510872850859892301
+    second: oak_woods_tileset_588
+  - first:
+      213: -5736605671170468295
+    second: oak_woods_tileset_589
+  - first:
+      213: -9079167116856781382
+    second: oak_woods_tileset_590
+  - first:
+      213: 1040419873515528829
+    second: oak_woods_tileset_591
+  - first:
+      213: -2960942384809362061
+    second: oak_woods_tileset_592
+  - first:
+      213: -3588919515622123807
+    second: oak_woods_tileset_593
+  - first:
+      213: 1563110143065260025
+    second: oak_woods_tileset_594
+  - first:
+      213: -2158222764355906041
+    second: oak_woods_tileset_595
+  - first:
+      213: -2266044398348725650
+    second: oak_woods_tileset_596
+  - first:
+      213: -5149986593111610453
+    second: oak_woods_tileset_597
+  - first:
+      213: -3555249284411422593
+    second: oak_woods_tileset_598
+  - first:
+      213: -4097350438016004413
+    second: oak_woods_tileset_599
+  - first:
+      213: 73284169700330839
+    second: oak_woods_tileset_600
+  - first:
+      213: 8236491355501232427
+    second: oak_woods_tileset_601
+  - first:
+      213: -4022296966725896333
+    second: oak_woods_tileset_602
+  - first:
+      213: 1629055116425049360
+    second: oak_woods_tileset_603
+  - first:
+      213: 3925903256758949812
+    second: oak_woods_tileset_604
+  - first:
+      213: -7711618363490740238
+    second: oak_woods_tileset_605
+  - first:
+      213: 6933623275434287611
+    second: oak_woods_tileset_606
+  - first:
+      213: 8789057383426089169
+    second: oak_woods_tileset_607
+  - first:
+      213: 5352762936944517876
+    second: oak_woods_tileset_608
+  - first:
+      213: 6452737503875867255
+    second: oak_woods_tileset_609
+  - first:
+      213: 4632357399678677125
+    second: oak_woods_tileset_610
+  - first:
+      213: 6923106959668839314
+    second: oak_woods_tileset_611
+  - first:
+      213: -4530791523498875842
+    second: oak_woods_tileset_612
+  - first:
+      213: -2876006283571199477
+    second: oak_woods_tileset_613
+  - first:
+      213: -5855918934085238422
+    second: oak_woods_tileset_614
+  - first:
+      213: 5105571921613838659
+    second: oak_woods_tileset_615
+  - first:
+      213: -2868988982903073034
+    second: oak_woods_tileset_616
+  - first:
+      213: 5743596797981844036
+    second: oak_woods_tileset_617
+  - first:
+      213: -1328221600956746653
+    second: oak_woods_tileset_618
+  - first:
+      213: -7060938269439319030
+    second: oak_woods_tileset_619
+  - first:
+      213: 6557768003510566082
+    second: oak_woods_tileset_620
+  - first:
+      213: -8768392073746001495
+    second: oak_woods_tileset_621
+  - first:
+      213: -5477700873826548361
+    second: oak_woods_tileset_622
+  - first:
+      213: 110748367628296850
+    second: oak_woods_tileset_623
+  - first:
+      213: -8336971502658463664
+    second: oak_woods_tileset_624
+  - first:
+      213: 4379068595407505264
+    second: oak_woods_tileset_625
+  - first:
+      213: -7986606561573017345
+    second: oak_woods_tileset_626
+  - first:
+      213: -622185237240615418
+    second: oak_woods_tileset_627
+  - first:
+      213: 596936370954184638
+    second: oak_woods_tileset_628
+  - first:
+      213: 8543851524318702171
+    second: oak_woods_tileset_629
+  - first:
+      213: 8748447762582084940
+    second: oak_woods_tileset_630
+  - first:
+      213: -8468613890392400572
+    second: oak_woods_tileset_631
+  - first:
+      213: -8483834171647697531
+    second: oak_woods_tileset_632
+  - first:
+      213: 1188250303935661155
+    second: oak_woods_tileset_633
+  - first:
+      213: 5305300307891082680
+    second: oak_woods_tileset_634
+  - first:
+      213: -495846706651811800
+    second: oak_woods_tileset_635
+  - first:
+      213: -6188928927293083218
+    second: oak_woods_tileset_636
+  - first:
+      213: -1306267289891080989
+    second: oak_woods_tileset_637
+  - first:
+      213: -3389402400463269939
+    second: oak_woods_tileset_638
+  - first:
+      213: -1354593017231441462
+    second: oak_woods_tileset_639
+  - first:
+      213: 644912541468530564
+    second: oak_woods_tileset_640
+  - first:
+      213: -2837096261041575249
+    second: oak_woods_tileset_641
+  - first:
+      213: 5532551659318549547
+    second: oak_woods_tileset_642
+  - first:
+      213: -5350079800077705731
+    second: oak_woods_tileset_643
+  - first:
+      213: 3093712433355422559
+    second: oak_woods_tileset_644
+  - first:
+      213: 6462069278259757465
+    second: oak_woods_tileset_645
+  - first:
+      213: -4279010607737163036
+    second: oak_woods_tileset_646
+  - first:
+      213: 6089514974778215266
+    second: oak_woods_tileset_647
+  - first:
+      213: -6818676148568438023
+    second: oak_woods_tileset_648
+  - first:
+      213: -246172013593111566
+    second: oak_woods_tileset_649
+  - first:
+      213: 6034332021607099301
+    second: oak_woods_tileset_650
+  - first:
+      213: -8793717321740272581
+    second: oak_woods_tileset_651
+  - first:
+      213: 4394956299554708202
+    second: oak_woods_tileset_652
+  - first:
+      213: 5216558514081081175
+    second: oak_woods_tileset_653
+  - first:
+      213: -1902093185032118046
+    second: oak_woods_tileset_654
+  - first:
+      213: 9219697388341177729
+    second: oak_woods_tileset_655
+  - first:
+      213: -4341837032085893234
+    second: oak_woods_tileset_656
+  - first:
+      213: 1924770617471113430
+    second: oak_woods_tileset_657
+  - first:
+      213: 1138658877151280859
+    second: oak_woods_tileset_658
+  - first:
+      213: -3522029456190005992
+    second: oak_woods_tileset_659
+  - first:
+      213: -3209168036214200738
+    second: oak_woods_tileset_660
+  - first:
+      213: 1535370163090665373
+    second: oak_woods_tileset_661
+  - first:
+      213: 7575909849070888934
+    second: oak_woods_tileset_662
+  - first:
+      213: 4458921413473421620
+    second: oak_woods_tileset_663
+  - first:
+      213: 4638839873879854504
+    second: oak_woods_tileset_664
+  - first:
+      213: 4731592041232527259
+    second: oak_woods_tileset_665
+  - first:
+      213: -6539773329584715170
+    second: oak_woods_tileset_666
+  - first:
+      213: 2166484472753539146
+    second: oak_woods_tileset_667
+  - first:
+      213: -1236002280613560952
+    second: oak_woods_tileset_668
+  - first:
+      213: 2866458255917092744
+    second: oak_woods_tileset_669
+  - first:
+      213: 6376440197857640778
+    second: oak_woods_tileset_670
+  - first:
+      213: 5670821705916421843
+    second: oak_woods_tileset_671
+  - first:
+      213: -2908210485304788507
+    second: oak_woods_tileset_672
+  - first:
+      213: -2329676926961932870
+    second: oak_woods_tileset_673
+  - first:
+      213: -713813279403487584
+    second: oak_woods_tileset_674
+  - first:
+      213: -7548352464327361432
+    second: oak_woods_tileset_675
+  - first:
+      213: -3962847301236091462
+    second: oak_woods_tileset_676
+  - first:
+      213: 5305965510510647594
+    second: oak_woods_tileset_677
+  - first:
+      213: 5549259839582200295
+    second: oak_woods_tileset_678
+  - first:
+      213: 8165155564123633712
+    second: oak_woods_tileset_679
+  - first:
+      213: 9048929070207993588
+    second: oak_woods_tileset_680
+  - first:
+      213: -941913102081818851
+    second: oak_woods_tileset_681
+  - first:
+      213: 4034367921586857728
+    second: oak_woods_tileset_682
+  - first:
+      213: 1358629875313120643
+    second: oak_woods_tileset_683
+  - first:
+      213: 2850181921558385960
+    second: oak_woods_tileset_684
+  - first:
+      213: -1684295019505463501
+    second: oak_woods_tileset_685
+  - first:
+      213: -2735142872086980175
+    second: oak_woods_tileset_686
+  - first:
+      213: -1118594314748168001
+    second: oak_woods_tileset_687
+  - first:
+      213: 7029109833866511944
+    second: oak_woods_tileset_688
+  - first:
+      213: 3286644859484173699
+    second: oak_woods_tileset_689
+  - first:
+      213: -6712883747227114956
+    second: oak_woods_tileset_690
+  - first:
+      213: 7374884891529977176
+    second: oak_woods_tileset_691
+  - first:
+      213: 8339888121600645808
+    second: oak_woods_tileset_692
+  - first:
+      213: -4753790500003774867
+    second: oak_woods_tileset_693
+  - first:
+      213: 6822442799544115178
+    second: oak_woods_tileset_694
+  - first:
+      213: 2735131863161988791
+    second: oak_woods_tileset_695
+  - first:
+      213: 1127628975331489885
+    second: oak_woods_tileset_696
+  - first:
+      213: 6594350845708659462
+    second: oak_woods_tileset_697
+  - first:
+      213: 8117112415631889132
+    second: oak_woods_tileset_698
+  - first:
+      213: -8884745520015944132
+    second: oak_woods_tileset_699
+  - first:
+      213: 2972093972776629897
+    second: oak_woods_tileset_700
+  - first:
+      213: -7166294579910490646
+    second: oak_woods_tileset_701
+  - first:
+      213: -1928913964486125185
+    second: oak_woods_tileset_702
+  - first:
+      213: -2238591955012343270
+    second: oak_woods_tileset_703
+  - first:
+      213: 1842767361960800282
+    second: oak_woods_tileset_704
+  - first:
+      213: 3244649903982929794
+    second: oak_woods_tileset_705
+  - first:
+      213: -2998142381320465225
+    second: oak_woods_tileset_706
+  - first:
+      213: -3422726485890069572
+    second: oak_woods_tileset_707
+  - first:
+      213: 5398025504642897562
+    second: oak_woods_tileset_708
+  - first:
+      213: -1842937746508422581
+    second: oak_woods_tileset_709
+  - first:
+      213: 607745611395249837
+    second: oak_woods_tileset_710
+  - first:
+      213: -4901777712175873250
+    second: oak_woods_tileset_711
+  - first:
+      213: 9030953144840588566
+    second: oak_woods_tileset_712
+  - first:
+      213: 4120966570780616535
+    second: oak_woods_tileset_713
+  - first:
+      213: -3552269551752791547
+    second: oak_woods_tileset_714
+  - first:
+      213: 6749704010162045874
+    second: oak_woods_tileset_715
+  - first:
+      213: 2324291126961130374
+    second: oak_woods_tileset_716
+  - first:
+      213: -2493416772757890692
+    second: oak_woods_tileset_717
+  - first:
+      213: 7198258329732523639
+    second: oak_woods_tileset_718
+  - first:
+      213: -8916314567281795250
+    second: oak_woods_tileset_719
+  - first:
+      213: 2803488518446906193
+    second: oak_woods_tileset_720
+  - first:
+      213: -439569526593583163
+    second: oak_woods_tileset_721
+  - first:
+      213: -4148220111206050408
+    second: oak_woods_tileset_722
+  - first:
+      213: 71077178751837773
+    second: oak_woods_tileset_723
+  - first:
+      213: 4290566580518712290
+    second: oak_woods_tileset_724
+  - first:
+      213: -4950243874541166240
+    second: oak_woods_tileset_725
+  - first:
+      213: 3414033384037339314
+    second: oak_woods_tileset_726
+  - first:
+      213: 3636473549885452391
+    second: oak_woods_tileset_727
+  - first:
+      213: -4558590260323844822
+    second: oak_woods_tileset_728
+  - first:
+      213: 8822292389033843099
+    second: oak_woods_tileset_729
+  - first:
+      213: -5406749365183055350
+    second: oak_woods_tileset_730
+  - first:
+      213: 492245828372232349
+    second: oak_woods_tileset_731
+  - first:
+      213: -5287895791893493966
+    second: oak_woods_tileset_732
+  - first:
+      213: 8988308027047877730
+    second: oak_woods_tileset_733
+  - first:
+      213: 4612586235682558459
+    second: oak_woods_tileset_734
+  - first:
+      213: -7950415067975257950
+    second: oak_woods_tileset_735
+  - first:
+      213: -2279369596814035754
+    second: oak_woods_tileset_736
+  - first:
+      213: 4201237527145382281
+    second: oak_woods_tileset_737
+  - first:
+      213: -1935781619653818239
+    second: oak_woods_tileset_738
+  - first:
+      213: 4723555904443657866
+    second: oak_woods_tileset_739
+  - first:
+      213: -8655985020297766198
+    second: oak_woods_tileset_740
+  - first:
+      213: -3367042003294991351
+    second: oak_woods_tileset_741
+  - first:
+      213: 3218776367402825550
+    second: oak_woods_tileset_742
+  - first:
+      213: 4650759049444632198
+    second: oak_woods_tileset_743
+  - first:
+      213: -7134732237730714729
+    second: oak_woods_tileset_744
+  - first:
+      213: -3220256676976967824
+    second: oak_woods_tileset_745
+  - first:
+      213: -3696749321789715299
+    second: oak_woods_tileset_746
+  - first:
+      213: 3696269573194909853
+    second: oak_woods_tileset_747
+  - first:
+      213: -1517331403126332242
+    second: oak_woods_tileset_748
+  - first:
+      213: 4863150396592544968
+    second: oak_woods_tileset_749
+  - first:
+      213: -298170374928160013
+    second: oak_woods_tileset_750
+  - first:
+      213: -1038777573240694061
+    second: oak_woods_tileset_751
+  - first:
+      213: -7465057827970643825
+    second: oak_woods_tileset_752
+  - first:
+      213: 1769306809309061491
+    second: oak_woods_tileset_753
+  - first:
+      213: -5022039351546577286
+    second: oak_woods_tileset_754
+  - first:
+      213: 5872545432361121472
+    second: oak_woods_tileset_755
+  - first:
+      213: -3280490571773665019
+    second: oak_woods_tileset_756
+  - first:
+      213: 3225245113793891579
+    second: oak_woods_tileset_757
+  - first:
+      213: 6864227882933318241
+    second: oak_woods_tileset_758
+  - first:
+      213: -1551640103133296941
+    second: oak_woods_tileset_759
+  - first:
+      213: 2213084576355603604
+    second: oak_woods_tileset_760
+  - first:
+      213: -4935780095111370065
+    second: oak_woods_tileset_761
+  - first:
+      213: -1066687424368063118
+    second: oak_woods_tileset_762
+  - first:
+      213: 376582400383786939
+    second: oak_woods_tileset_763
+  - first:
+      213: -3489776277715727934
+    second: oak_woods_tileset_764
+  - first:
+      213: 6583715040558076122
+    second: oak_woods_tileset_765
+  - first:
+      213: -8854324931004376321
+    second: oak_woods_tileset_766
+  - first:
+      213: 2095151178822794882
+    second: oak_woods_tileset_767
+  - first:
+      213: 5881056098021296527
+    second: oak_woods_tileset_768
+  - first:
+      213: -812116484819884307
+    second: oak_woods_tileset_769
+  - first:
+      213: 931928313244134129
+    second: oak_woods_tileset_770
+  - first:
+      213: -6442861305966088213
+    second: oak_woods_tileset_771
+  - first:
+      213: 979224907252563919
+    second: oak_woods_tileset_772
+  - first:
+      213: -8163886972931729487
+    second: oak_woods_tileset_773
+  - first:
+      213: -6140762722066972010
+    second: oak_woods_tileset_774
+  - first:
+      213: 4927574071951985108
+    second: oak_woods_tileset_775
+  - first:
+      213: -264963366857999053
+    second: oak_woods_tileset_776
+  - first:
+      213: 1829651185412830778
+    second: oak_woods_tileset_777
+  - first:
+      213: 7923078989749470672
+    second: oak_woods_tileset_778
+  - first:
+      213: 783148719831895568
+    second: oak_woods_tileset_779
+  - first:
+      213: 1355719474048052861
+    second: oak_woods_tileset_780
+  - first:
+      213: -3471550849955528663
+    second: oak_woods_tileset_781
+  - first:
+      213: -2822083347338031960
+    second: oak_woods_tileset_782
+  - first:
+      213: 586431301185830821
+    second: oak_woods_tileset_783
+  - first:
+      213: -3906469598739688612
+    second: oak_woods_tileset_784
+  - first:
+      213: -804699294359430821
+    second: oak_woods_tileset_785
+  - first:
+      213: 1818655216252976123
+    second: oak_woods_tileset_786
+  - first:
+      213: -2658349710194056951
+    second: oak_woods_tileset_787
+  - first:
+      213: 6500694526238781911
+    second: oak_woods_tileset_788
+  - first:
+      213: -1847019794263145744
+    second: oak_woods_tileset_789
+  - first:
+      213: -230039421949423103
+    second: oak_woods_tileset_790
+  - first:
+      213: 6591230560169709454
+    second: oak_woods_tileset_791
+  - first:
+      213: 1868256079733424941
+    second: oak_woods_tileset_792
+  - first:
+      213: 5063472579361658789
+    second: oak_woods_tileset_793
+  - first:
+      213: 5533030794594059938
+    second: oak_woods_tileset_794
+  - first:
+      213: -9002518408483036004
+    second: oak_woods_tileset_795
+  - first:
+      213: 1469326708625244626
+    second: oak_woods_tileset_796
+  - first:
+      213: 5473791182510845476
+    second: oak_woods_tileset_797
+  - first:
+      213: -799875732499039197
+    second: oak_woods_tileset_798
+  - first:
+      213: 869018802962072762
+    second: oak_woods_tileset_799
+  - first:
+      213: 8814614965328380348
+    second: oak_woods_tileset_800
+  - first:
+      213: 3401867567519296127
+    second: oak_woods_tileset_801
+  - first:
+      213: 5062735096741053356
+    second: oak_woods_tileset_802
+  - first:
+      213: -4694042244517270218
+    second: oak_woods_tileset_803
+  - first:
+      213: 8971065088545740836
+    second: oak_woods_tileset_804
+  - first:
+      213: -6926112309851142560
+    second: oak_woods_tileset_805
+  - first:
+      213: -8817347737522730269
+    second: oak_woods_tileset_806
+  - first:
+      213: 7639715464100730243
+    second: oak_woods_tileset_807
+  - first:
+      213: -5118049305144138586
+    second: oak_woods_tileset_808
+  - first:
+      213: 424521624853102281
+    second: oak_woods_tileset_809
+  - first:
+      213: -5512073717614556672
+    second: oak_woods_tileset_810
+  - first:
+      213: -4435120751057459681
+    second: oak_woods_tileset_811
+  - first:
+      213: 7518340742392487593
+    second: oak_woods_tileset_812
+  - first:
+      213: -8951673601837104054
+    second: oak_woods_tileset_813
+  - first:
+      213: -3566865463415922368
+    second: oak_woods_tileset_814
+  - first:
+      213: -1276552883570680908
+    second: oak_woods_tileset_815
+  - first:
+      213: -7404635109728522011
+    second: oak_woods_tileset_816
+  - first:
+      213: -2155992242577673467
+    second: oak_woods_tileset_817
+  - first:
+      213: -6973276428915264457
+    second: oak_woods_tileset_818
+  - first:
+      213: -5870551592408894414
+    second: oak_woods_tileset_819
+  - first:
+      213: -8460970592312215218
+    second: oak_woods_tileset_820
+  - first:
+      213: -7957891578783572754
+    second: oak_woods_tileset_821
+  - first:
+      213: 1079298363324765103
+    second: oak_woods_tileset_822
+  - first:
+      213: 5788637681350558641
+    second: oak_woods_tileset_823
+  - first:
+      213: 7225865763050324865
+    second: oak_woods_tileset_824
+  - first:
+      213: 3988546678710679334
+    second: oak_woods_tileset_825
+  - first:
+      213: -3821840005524467605
+    second: oak_woods_tileset_826
+  - first:
+      213: -2543878880831616341
+    second: oak_woods_tileset_827
+  - first:
+      213: -7371889554813528515
+    second: oak_woods_tileset_828
+  - first:
+      213: 4125621581096062482
+    second: oak_woods_tileset_829
+  - first:
+      213: 270443056093584495
+    second: oak_woods_tileset_830
+  - first:
+      213: -7160716641141898474
+    second: oak_woods_tileset_831
+  - first:
+      213: 3873766743107883117
+    second: oak_woods_tileset_832
+  - first:
+      213: 9036451269781417052
+    second: oak_woods_tileset_833
+  - first:
+      213: 1123427909493754834
+    second: oak_woods_tileset_834
+  - first:
+      213: 2720898502940639997
+    second: oak_woods_tileset_835
+  - first:
+      213: 90557120023842976
+    second: oak_woods_tileset_836
+  - first:
+      213: -1968903968129773386
+    second: oak_woods_tileset_837
+  - first:
+      213: -1855956951514077952
+    second: oak_woods_tileset_838
+  - first:
+      213: -6649798584631345414
+    second: oak_woods_tileset_839
+  - first:
+      213: 227018538264175820
+    second: oak_woods_tileset_840
+  - first:
+      213: -6157684871356110566
+    second: oak_woods_tileset_841
+  - first:
+      213: -7700587550797163377
+    second: oak_woods_tileset_842
+  - first:
+      213: -2251799137460549905
+    second: oak_woods_tileset_843
+  - first:
+      213: -4478082194885037826
+    second: oak_woods_tileset_844
+  - first:
+      213: 7605797456183839525
+    second: oak_woods_tileset_845
+  - first:
+      213: -2335949289408201017
+    second: oak_woods_tileset_846
+  - first:
+      213: -7024325677345164678
+    second: oak_woods_tileset_847
+  - first:
+      213: -2540610341467430071
+    second: oak_woods_tileset_848
+  - first:
+      213: 6698056498461771643
+    second: oak_woods_tileset_849
+  - first:
+      213: 20402731209661496
+    second: oak_woods_tileset_850
+  - first:
+      213: -1852478052582972372
+    second: oak_woods_tileset_851
+  - first:
+      213: -1093133231984373419
+    second: oak_woods_tileset_852
+  - first:
+      213: 7667249106734055750
+    second: oak_woods_tileset_853
+  - first:
+      213: -3217666267040558312
+    second: oak_woods_tileset_854
+  - first:
+      213: 7130330737732555414
+    second: oak_woods_tileset_855
+  - first:
+      213: -5139486265483645057
+    second: oak_woods_tileset_856
+  - first:
+      213: 4450508004192317835
+    second: oak_woods_tileset_857
+  - first:
+      213: -3750457663325055216
+    second: oak_woods_tileset_858
+  - first:
+      213: -7808627575473726057
+    second: oak_woods_tileset_859
+  - first:
+      213: 1470564550201315270
+    second: oak_woods_tileset_860
+  - first:
+      213: -275613460920949850
+    second: oak_woods_tileset_861
+  - first:
+      213: 4542202155350605317
+    second: oak_woods_tileset_862
+  - first:
+      213: -3159652026357785572
+    second: oak_woods_tileset_863
+  - first:
+      213: 2663960083919772274
+    second: oak_woods_tileset_864
+  - first:
+      213: 1351699884402354408
+    second: oak_woods_tileset_865
+  - first:
+      213: -7549383228501255553
+    second: oak_woods_tileset_866
+  - first:
+      213: -3953252988089760528
+    second: oak_woods_tileset_867
+  - first:
+      213: 7547670196524493379
+    second: oak_woods_tileset_868
+  - first:
+      213: -6934408984136859106
+    second: oak_woods_tileset_869
+  - first:
+      213: -7113820600495084506
+    second: oak_woods_tileset_870
+  - first:
+      213: -964937682822543831
+    second: oak_woods_tileset_871
+  - first:
+      213: -6361240410196366681
+    second: oak_woods_tileset_872
+  - first:
+      213: 1061585981104610883
+    second: oak_woods_tileset_873
+  - first:
+      213: 7711328142242451006
+    second: oak_woods_tileset_874
+  - first:
+      213: 1984161801286542986
+    second: oak_woods_tileset_875
+  - first:
+      213: 2002567743697573633
+    second: oak_woods_tileset_876
+  - first:
+      213: -8917993851685303665
+    second: oak_woods_tileset_877
+  - first:
+      213: 1564911903337190730
+    second: oak_woods_tileset_878
+  - first:
+      213: 1109353360086448172
+    second: oak_woods_tileset_879
+  - first:
+      213: 328356800564606899
+    second: oak_woods_tileset_880
+  - first:
+      213: 8979447538213331771
+    second: oak_woods_tileset_881
+  - first:
+      213: 4994459271846130643
+    second: oak_woods_tileset_882
+  - first:
+      213: 605211597262522143
+    second: oak_woods_tileset_883
+  - first:
+      213: 3701008039619268397
+    second: oak_woods_tileset_884
+  - first:
+      213: -7491465242595157805
+    second: oak_woods_tileset_885
+  - first:
+      213: -188496141333438946
+    second: oak_woods_tileset_886
+  - first:
+      213: -5156743213449914569
+    second: oak_woods_tileset_887
+  - first:
+      213: 515100591213117631
+    second: oak_woods_tileset_888
+  - first:
+      213: 320178428403794688
+    second: oak_woods_tileset_889
+  - first:
+      213: -1386696354422568116
+    second: oak_woods_tileset_890
+  - first:
+      213: -8698352833553532458
+    second: oak_woods_tileset_891
+  - first:
+      213: -510404765468451346
+    second: oak_woods_tileset_892
+  - first:
+      213: -8341353417074613873
+    second: oak_woods_tileset_893
+  - first:
+      213: -3624646087542272675
+    second: oak_woods_tileset_894
+  - first:
+      213: -6086289041283643751
+    second: oak_woods_tileset_895
+  - first:
+      213: -9070664557557593795
+    second: oak_woods_tileset_896
+  - first:
+      213: -2047511606673534980
+    second: oak_woods_tileset_897
+  - first:
+      213: 7683424687147832305
+    second: oak_woods_tileset_898
+  - first:
+      213: 3377216590614834378
+    second: oak_woods_tileset_899
+  - first:
+      213: 5118163052402257874
+    second: oak_woods_tileset_900
+  - first:
+      213: 3216938085463663253
+    second: oak_woods_tileset_901
+  - first:
+      213: -987674731233789224
+    second: oak_woods_tileset_902
+  - first:
+      213: 1578200842912890177
+    second: oak_woods_tileset_903
+  - first:
+      213: 3284486059782325532
+    second: oak_woods_tileset_904
+  - first:
+      213: 5499211774010818720
+    second: oak_woods_tileset_905
+  - first:
+      213: -491143591018309865
+    second: oak_woods_tileset_906
+  - first:
+      213: 1413654538296333214
+    second: oak_woods_tileset_907
+  - first:
+      213: -5845043591777673726
+    second: oak_woods_tileset_908
+  - first:
+      213: -8967213743399313508
+    second: oak_woods_tileset_909
+  - first:
+      213: -4373432027161891333
+    second: oak_woods_tileset_910
+  - first:
+      213: 8515916965667856425
+    second: oak_woods_tileset_911
+  - first:
+      213: 8198478207982894780
+    second: oak_woods_tileset_912
+  - first:
+      213: -4183346795830361237
+    second: oak_woods_tileset_913
+  - first:
+      213: 6206223327605967127
+    second: oak_woods_tileset_914
+  - first:
+      213: -5861541567252052294
+    second: oak_woods_tileset_915
+  - first:
+      213: -7288771923929883875
+    second: oak_woods_tileset_916
+  - first:
+      213: 1532355972913569485
+    second: oak_woods_tileset_917
+  - first:
+      213: 3407339789794462614
+    second: oak_woods_tileset_918
+  - first:
+      213: 1543754710371725916
+    second: oak_woods_tileset_919
+  - first:
+      213: -9073694161551123677
+    second: oak_woods_tileset_920
+  - first:
+      213: 5412831181766234814
+    second: oak_woods_tileset_921
+  - first:
+      213: 1420918837886090861
+    second: oak_woods_tileset_922
+  - first:
+      213: 3531343542744393033
+    second: oak_woods_tileset_923
+  - first:
+      213: -3152244277798246286
+    second: oak_woods_tileset_924
+  - first:
+      213: 7434734579564250534
+    second: oak_woods_tileset_925
+  - first:
+      213: -7524816208074007215
+    second: oak_woods_tileset_926
+  - first:
+      213: -6967808922109753712
+    second: oak_woods_tileset_927
+  - first:
+      213: 5574644140567782612
+    second: oak_woods_tileset_928
+  - first:
+      213: 3028162523784299377
+    second: oak_woods_tileset_929
+  - first:
+      213: -3525403424826808206
+    second: oak_woods_tileset_930
+  - first:
+      213: -6477149225158570398
+    second: oak_woods_tileset_931
+  - first:
+      213: -5623599078855996349
+    second: oak_woods_tileset_932
+  - first:
+      213: -5282612384443910960
+    second: oak_woods_tileset_933
+  - first:
+      213: -6366423138856059101
+    second: oak_woods_tileset_934
+  - first:
+      213: -794683450200168627
+    second: oak_woods_tileset_935
+  - first:
+      213: -442926453688699791
+    second: oak_woods_tileset_936
+  - first:
+      213: -2698384898098819421
+    second: oak_woods_tileset_937
+  - first:
+      213: -2456670027751332650
+    second: oak_woods_tileset_938
+  - first:
+      213: 370834890627101337
+    second: oak_woods_tileset_939
+  - first:
+      213: -4715297568987375367
+    second: oak_woods_tileset_940
+  - first:
+      213: 2398923765218746986
+    second: oak_woods_tileset_941
+  - first:
+      213: -5792826902405423929
+    second: oak_woods_tileset_942
+  - first:
+      213: -8308661942374151407
+    second: oak_woods_tileset_943
+  - first:
+      213: -4426051242124408003
+    second: oak_woods_tileset_944
+  - first:
+      213: 1612179026077736166
+    second: oak_woods_tileset_945
+  - first:
+      213: -3189261044826766673
+    second: oak_woods_tileset_946
+  - first:
+      213: 4199854483575132280
+    second: oak_woods_tileset_947
+  - first:
+      213: 4047098140921179886
+    second: oak_woods_tileset_948
+  - first:
+      213: 9046175394841001973
+    second: oak_woods_tileset_949
+  - first:
+      213: -7903441326377435611
+    second: oak_woods_tileset_950
+  - first:
+      213: -4758962672993706442
+    second: oak_woods_tileset_951
+  - first:
+      213: 4317193269892505803
+    second: oak_woods_tileset_952
+  - first:
+      213: 3182170985165568057
+    second: oak_woods_tileset_953
+  - first:
+      213: 964393684831189284
+    second: oak_woods_tileset_954
+  - first:
+      213: 1456914645960661189
+    second: oak_woods_tileset_955
+  - first:
+      213: -2505797217242650577
+    second: oak_woods_tileset_956
+  - first:
+      213: 5089314236950602975
+    second: oak_woods_tileset_957
+  - first:
+      213: -5417228916452232317
+    second: oak_woods_tileset_958
+  - first:
+      213: 1353836048804030932
+    second: oak_woods_tileset_959
+  - first:
+      213: 2795812942769719056
+    second: oak_woods_tileset_960
+  - first:
+      213: -2849601679162020635
+    second: oak_woods_tileset_961
+  - first:
+      213: 308724604125001843
+    second: oak_woods_tileset_962
+  - first:
+      213: -2500316069994263576
+    second: oak_woods_tileset_963
+  - first:
+      213: -7594729557775222591
+    second: oak_woods_tileset_964
+  - first:
+      213: -5860722920604124210
+    second: oak_woods_tileset_965
+  - first:
+      213: 1613014571973970015
+    second: oak_woods_tileset_966
+  - first:
+      213: -515270195186002037
+    second: oak_woods_tileset_967
+  - first:
+      213: -3764296191266362761
+    second: oak_woods_tileset_968
+  - first:
+      213: 4161088993066461345
+    second: oak_woods_tileset_969
+  - first:
+      213: 5199009664572994042
+    second: oak_woods_tileset_970
+  - first:
+      213: -4309590552843016369
+    second: oak_woods_tileset_971
+  - first:
+      213: 5840908604232082266
+    second: oak_woods_tileset_972
+  - first:
+      213: -7171932887597193224
+    second: oak_woods_tileset_973
+  - first:
+      213: -6083328131552396946
+    second: oak_woods_tileset_974
+  - first:
+      213: 7018357448422906207
+    second: oak_woods_tileset_975
+  - first:
+      213: -2106981583619165164
+    second: oak_woods_tileset_976
+  - first:
+      213: 7077143242774244850
+    second: oak_woods_tileset_977
+  - first:
+      213: -2117425419194026404
+    second: oak_woods_tileset_978
+  - first:
+      213: 468765663449117421
+    second: oak_woods_tileset_979
+  - first:
+      213: -2573073868997334120
+    second: oak_woods_tileset_980
+  - first:
+      213: -5958551366557276571
+    second: oak_woods_tileset_981
+  - first:
+      213: -1964035287055394502
+    second: oak_woods_tileset_982
+  - first:
+      213: -4298071884392056455
+    second: oak_woods_tileset_983
+  - first:
+      213: 1140665738691008208
+    second: oak_woods_tileset_984
+  - first:
+      213: 7448898536539133278
+    second: oak_woods_tileset_985
+  - first:
+      213: -2589898629128396258
+    second: oak_woods_tileset_986
+  - first:
+      213: 1508685099013869954
+    second: oak_woods_tileset_987
+  - first:
+      213: 8231187868166204446
+    second: oak_woods_tileset_988
+  - first:
+      213: -404474777942425972
+    second: oak_woods_tileset_989
+  - first:
+      213: -2272913616211199410
+    second: oak_woods_tileset_990
+  - first:
+      213: -1683087284233092785
+    second: oak_woods_tileset_991
+  - first:
+      213: -2462066009257389098
+    second: oak_woods_tileset_992
+  - first:
+      213: 1079688308340635159
+    second: oak_woods_tileset_993
+  - first:
+      213: -6883366988204485689
+    second: oak_woods_tileset_994
+  - first:
+      213: 3743664171689724979
+    second: oak_woods_tileset_995
+  - first:
+      213: -5051007769291406867
+    second: oak_woods_tileset_996
+  - first:
+      213: 8227239359475478209
+    second: oak_woods_tileset_997
+  - first:
+      213: 4206185191343572880
+    second: oak_woods_tileset_998
+  - first:
+      213: -885487291366310293
+    second: oak_woods_tileset_999
+  - first:
+      213: -9222108195153799787
+    second: oak_woods_tileset_1000
+  - first:
+      213: 1138603528836209205
+    second: oak_woods_tileset_1001
+  - first:
+      213: 8212246580585520912
+    second: oak_woods_tileset_1002
+  - first:
+      213: 5540743378557824889
+    second: oak_woods_tileset_1003
+  - first:
+      213: -8514488543611796953
+    second: oak_woods_tileset_1004
+  - first:
+      213: 2783272366198943860
+    second: oak_woods_tileset_1005
+  - first:
+      213: 6327614093034578665
+    second: oak_woods_tileset_1006
+  - first:
+      213: 8855974646616030389
+    second: oak_woods_tileset_1007
+  - first:
+      213: -8922914667447666449
+    second: oak_woods_tileset_1008
+  - first:
+      213: -50900337226543475
+    second: oak_woods_tileset_1009
+  - first:
+      213: 8135166729216565350
+    second: oak_woods_tileset_1010
+  - first:
+      213: -5788493520880683952
+    second: oak_woods_tileset_1011
+  - first:
+      213: 5149491517695187267
+    second: oak_woods_tileset_1012
+  - first:
+      213: -3299449533245425891
+    second: oak_woods_tileset_1013
+  - first:
+      213: 1884292727185592564
+    second: oak_woods_tileset_1014
+  - first:
+      213: 2444935341755402907
+    second: oak_woods_tileset_1015
+  - first:
+      213: 6944684009212918947
+    second: oak_woods_tileset_1016
+  - first:
+      213: -6863566217385522472
+    second: oak_woods_tileset_1017
+  - first:
+      213: 28914694147253533
+    second: oak_woods_tileset_1018
+  - first:
+      213: -1460360424740096254
+    second: oak_woods_tileset_1019
+  - first:
+      213: -4959246475431761096
+    second: oak_woods_tileset_1020
+  - first:
+      213: -5891217486356169860
+    second: oak_woods_tileset_1021
+  - first:
+      213: -7125930374083945494
+    second: oak_woods_tileset_1022
+  - first:
+      213: 8438980729188705808
+    second: oak_woods_tileset_1023
+  - first:
+      213: -8896124669779244266
+    second: oak_woods_tileset_1024
+  - first:
+      213: -5184939296811286475
+    second: oak_woods_tileset_1025
+  - first:
+      213: 6219777631065462202
+    second: oak_woods_tileset_1026
+  - first:
+      213: -1833700915869754543
+    second: oak_woods_tileset_1027
+  - first:
+      213: 8090187753500851952
+    second: oak_woods_tileset_1028
+  - first:
+      213: 7373382647302830347
+    second: oak_woods_tileset_1029
+  - first:
+      213: 7063010232142272570
+    second: oak_woods_tileset_1030
+  - first:
+      213: 1255621781700009667
+    second: oak_woods_tileset_1031
+  - first:
+      213: 5924312391927879540
+    second: oak_woods_tileset_1032
+  - first:
+      213: -3829291930075368332
+    second: oak_woods_tileset_1033
+  - first:
+      213: -8460954649453220785
+    second: oak_woods_tileset_1034
+  - first:
+      213: -4211313417882959291
+    second: oak_woods_tileset_1035
+  - first:
+      213: 1035767083481385195
+    second: oak_woods_tileset_1036
+  - first:
+      213: 2547344339158621746
+    second: oak_woods_tileset_1037
+  - first:
+      213: -5056097804213651100
+    second: oak_woods_tileset_1038
+  - first:
+      213: -2189841179211126363
+    second: oak_woods_tileset_1039
+  - first:
+      213: 6717433997017129765
+    second: oak_woods_tileset_1040
+  - first:
+      213: -5466049705155291021
+    second: oak_woods_tileset_1041
+  - first:
+      213: 1686792840231803002
+    second: oak_woods_tileset_1042
+  - first:
+      213: -6993878320292720526
+    second: oak_woods_tileset_1043
+  - first:
+      213: -7210013454951962584
+    second: oak_woods_tileset_1044
+  - first:
+      213: 2538508803003223540
+    second: oak_woods_tileset_1045
+  - first:
+      213: -7451561560687162095
+    second: oak_woods_tileset_1046
+  - first:
+      213: 2663588274254562570
+    second: oak_woods_tileset_1047
+  - first:
+      213: 6916935195124843772
+    second: oak_woods_tileset_1048
+  - first:
+      213: 3881445003016380793
+    second: oak_woods_tileset_1049
+  - first:
+      213: 7405984615730775247
+    second: oak_woods_tileset_1050
+  - first:
+      213: -1524258413740970315
+    second: oak_woods_tileset_1051
+  - first:
+      213: 8967172356870798487
+    second: oak_woods_tileset_1052
+  - first:
+      213: -6624115971480657858
+    second: oak_woods_tileset_1053
+  - first:
+      213: -4105883623740227142
+    second: oak_woods_tileset_1054
+  - first:
+      213: 8157476276949180855
+    second: oak_woods_tileset_1055
+  - first:
+      213: 5146198271127218605
+    second: oak_woods_tileset_1056
+  - first:
+      213: -858019747141999021
+    second: oak_woods_tileset_1057
+  - first:
+      213: -1060572020621697956
+    second: oak_woods_tileset_1058
+  - first:
+      213: 1789509248708127796
+    second: oak_woods_tileset_1059
+  - first:
+      213: -8782852695949986629
+    second: oak_woods_tileset_1060
+  - first:
+      213: 8078780375269302017
+    second: oak_woods_tileset_1061
+  - first:
+      213: -8068769017304836185
+    second: oak_woods_tileset_1062
+  - first:
+      213: 188131787042485821
+    second: oak_woods_tileset_1063
+  - first:
+      213: 444843850453619185
+    second: oak_woods_tileset_1064
+  - first:
+      213: 7372731759844777442
+    second: oak_woods_tileset_1065
+  - first:
+      213: 7068227726851586235
+    second: oak_woods_tileset_1066
+  - first:
+      213: 3709569397304004993
+    second: oak_woods_tileset_1067
+  - first:
+      213: 6387910825952330524
+    second: oak_woods_tileset_1068
+  - first:
+      213: -6500331240767374763
+    second: oak_woods_tileset_1069
+  - first:
+      213: 2573317269409465652
+    second: oak_woods_tileset_1070
+  - first:
+      213: -8362430826938407715
+    second: oak_woods_tileset_1071
+  - first:
+      213: -5853414855175963830
+    second: oak_woods_tileset_1072
+  - first:
+      213: 4750015989606847423
+    second: oak_woods_tileset_1073
+  - first:
+      213: -5023785621969510548
+    second: oak_woods_tileset_1074
+  - first:
+      213: 5838635826607749532
+    second: oak_woods_tileset_1075
+  - first:
+      213: 1141240725279438963
+    second: oak_woods_tileset_1076
+  - first:
+      213: 187547276330046043
+    second: oak_woods_tileset_1077
+  - first:
+      213: 8245070566113374489
+    second: oak_woods_tileset_1078
+  - first:
+      213: 1229470912131701506
+    second: oak_woods_tileset_1079
+  - first:
+      213: 6235368347676666427
+    second: oak_woods_tileset_1080
+  - first:
+      213: 7480203465716898452
+    second: oak_woods_tileset_1081
+  - first:
+      213: 7577472373117660950
+    second: oak_woods_tileset_1082
+  - first:
+      213: 7513282691958140458
+    second: oak_woods_tileset_1083
+  - first:
+      213: 2062330021712839890
+    second: oak_woods_tileset_1084
+  - first:
+      213: 671006464300327920
+    second: oak_woods_tileset_1085
+  - first:
+      213: 3175822995911792527
+    second: oak_woods_tileset_1086
+  - first:
+      213: 256846077308298381
+    second: oak_woods_tileset_1087
+  - first:
+      213: -7570961024416011840
+    second: oak_woods_tileset_1088
+  - first:
+      213: 1610012688692705383
+    second: oak_woods_tileset_1089
+  - first:
+      213: -7269688142948023819
+    second: oak_woods_tileset_1090
+  - first:
+      213: 7543602748473202143
+    second: oak_woods_tileset_1091
+  - first:
+      213: 5776296816385127508
+    second: oak_woods_tileset_1092
+  - first:
+      213: 7947611458926441902
+    second: oak_woods_tileset_1093
+  - first:
+      213: -7073871370860847513
+    second: oak_woods_tileset_1094
+  - first:
+      213: 5159414834995973812
+    second: oak_woods_tileset_1095
+  - first:
+      213: 5232496460219074046
+    second: oak_woods_tileset_1096
+  - first:
+      213: 3500277799019798894
+    second: oak_woods_tileset_1097
+  - first:
+      213: -8993476984245298304
+    second: oak_woods_tileset_1098
+  - first:
+      213: 8153157346430334874
+    second: oak_woods_tileset_1099
+  - first:
+      213: -8463219220171945854
+    second: oak_woods_tileset_1100
+  - first:
+      213: -7026337761008073108
+    second: oak_woods_tileset_1101
+  - first:
+      213: -7362049594808666673
+    second: oak_woods_tileset_1102
+  - first:
+      213: 3205017445264840281
+    second: oak_woods_tileset_1103
+  - first:
+      213: 8066642897822559312
+    second: oak_woods_tileset_1104
+  - first:
+      213: 2458666380691525431
+    second: oak_woods_tileset_1105
+  - first:
+      213: 3384859993951458956
+    second: oak_woods_tileset_1106
+  - first:
+      213: 7933801794277694060
+    second: oak_woods_tileset_1107
+  - first:
+      213: 3232048938363070689
+    second: oak_woods_tileset_1108
+  - first:
+      213: 7441787305430888035
+    second: oak_woods_tileset_1109
+  - first:
+      213: 8269477509769103175
+    second: oak_woods_tileset_1110
+  - first:
+      213: 4512830239846531738
+    second: oak_woods_tileset_1111
+  - first:
+      213: 1645449076788662414
+    second: oak_woods_tileset_1112
+  - first:
+      213: 6707920802805886350
+    second: oak_woods_tileset_1113
+  - first:
+      213: -1876019078106412162
+    second: oak_woods_tileset_1114
+  - first:
+      213: -4568008062989239964
+    second: oak_woods_tileset_1115
+  - first:
+      213: 5611719666097001084
+    second: oak_woods_tileset_1116
+  - first:
+      213: 3945733477423305470
+    second: oak_woods_tileset_1117
+  - first:
+      213: -5554610293950526742
+    second: oak_woods_tileset_1118
+  - first:
+      213: -4870765648677810595
+    second: oak_woods_tileset_1119
+  - first:
+      213: -6065173187371277409
+    second: oak_woods_tileset_1120
+  - first:
+      213: 8178114492122779408
+    second: oak_woods_tileset_1121
+  - first:
+      213: 3853144076630041179
+    second: oak_woods_tileset_1122
+  - first:
+      213: -3269635222193550325
+    second: oak_woods_tileset_1123
+  - first:
+      213: 6786655030888935899
+    second: oak_woods_tileset_1124
+  - first:
+      213: 1749962429807513935
+    second: oak_woods_tileset_1125
+  - first:
+      213: -1182692372972054533
+    second: oak_woods_tileset_1126
+  - first:
+      213: -8852638282723899389
+    second: oak_woods_tileset_1127
+  - first:
+      213: 4220471162453597607
+    second: oak_woods_tileset_1128
+  - first:
+      213: -882853310647602401
+    second: oak_woods_tileset_1129
+  - first:
+      213: -6093728880678419330
+    second: oak_woods_tileset_1130
+  - first:
+      213: 2096623463264040652
+    second: oak_woods_tileset_1131
+  - first:
+      213: -3297317828596733347
+    second: oak_woods_tileset_1132
+  - first:
+      213: 4822515265528078559
+    second: oak_woods_tileset_1133
+  - first:
+      213: 3425774318689976776
+    second: oak_woods_tileset_1134
+  - first:
+      213: 3087081584061231726
+    second: oak_woods_tileset_1135
+  - first:
+      213: -4458067207702638557
+    second: oak_woods_tileset_1136
+  - first:
+      213: 1093172216619966687
+    second: oak_woods_tileset_1137
+  - first:
+      213: -2195471854424510878
+    second: oak_woods_tileset_1138
+  - first:
+      213: 6043722580908965
+    second: oak_woods_tileset_1139
+  - first:
+      213: -2614889416516425745
+    second: oak_woods_tileset_1140
+  - first:
+      213: 3961956958471769850
+    second: oak_woods_tileset_1141
+  - first:
+      213: -4889694678424812990
+    second: oak_woods_tileset_1142
+  - first:
+      213: 5746494966147840176
+    second: oak_woods_tileset_1143
+  - first:
+      213: 8219405528362505400
+    second: oak_woods_tileset_1144
+  - first:
+      213: -3566382079500153965
+    second: oak_woods_tileset_1145
+  - first:
+      213: -4959652287355563592
+    second: oak_woods_tileset_1146
+  - first:
+      213: 1970749342212200174
+    second: oak_woods_tileset_1147
+  - first:
+      213: -5077114670816074430
+    second: oak_woods_tileset_1148
+  - first:
+      213: 1756026319263174656
+    second: oak_woods_tileset_1149
+  - first:
+      213: 6711404642584273205
+    second: oak_woods_tileset_1150
+  - first:
+      213: 3740102022621865788
+    second: oak_woods_tileset_1151
+  - first:
+      213: 5305515618364670946
+    second: oak_woods_tileset_1152
+  - first:
+      213: -2962326721162876934
+    second: oak_woods_tileset_1153
+  - first:
+      213: -4487980010541431209
+    second: oak_woods_tileset_1154
+  - first:
+      213: -1133591871438317426
+    second: oak_woods_tileset_1155
+  - first:
+      213: -8604177085957380765
+    second: oak_woods_tileset_1156
+  - first:
+      213: -7995058227185014449
+    second: oak_woods_tileset_1157
+  - first:
+      213: -7065328312113687306
+    second: oak_woods_tileset_1158
+  - first:
+      213: -9138945632443814472
+    second: oak_woods_tileset_1159
+  - first:
+      213: -7847403525903109603
+    second: oak_woods_tileset_1160
+  - first:
+      213: 7042445893605974940
+    second: oak_woods_tileset_1161
+  - first:
+      213: 3120291932076301564
+    second: oak_woods_tileset_1162
+  - first:
+      213: -6777769894932095813
+    second: oak_woods_tileset_1163
+  - first:
+      213: -3992470851998221569
+    second: oak_woods_tileset_1164
+  - first:
+      213: -3467297752441682941
+    second: oak_woods_tileset_1165
+  - first:
+      213: -6512216874111047751
+    second: oak_woods_tileset_1166
+  - first:
+      213: -4673727078856836013
+    second: oak_woods_tileset_1167
+  - first:
+      213: -3005744849169972369
+    second: oak_woods_tileset_1168
+  - first:
+      213: 556257920658909467
+    second: oak_woods_tileset_1169
+  - first:
+      213: 2776943785816940998
+    second: oak_woods_tileset_1170
+  - first:
+      213: -1973138922176705609
+    second: oak_woods_tileset_1171
+  - first:
+      213: -1370290469207832511
+    second: oak_woods_tileset_1172
+  - first:
+      213: 5237445792438803781
+    second: oak_woods_tileset_1173
+  - first:
+      213: -1213750180497062477
+    second: oak_woods_tileset_1174
+  - first:
+      213: 8746815995291248228
+    second: oak_woods_tileset_1175
+  - first:
+      213: -8500746936230342541
+    second: oak_woods_tileset_1176
+  - first:
+      213: 6322047068913677718
+    second: oak_woods_tileset_1177
+  - first:
+      213: -2454356290072504195
+    second: oak_woods_tileset_1178
+  - first:
+      213: 3642950266022999423
+    second: oak_woods_tileset_1179
+  - first:
+      213: 812006143740670624
+    second: oak_woods_tileset_1180
+  - first:
+      213: 8856902880559939636
+    second: oak_woods_tileset_1181
+  - first:
+      213: -8878403019349690470
+    second: oak_woods_tileset_1182
+  - first:
+      213: 7404433141188316777
+    second: oak_woods_tileset_1183
+  - first:
+      213: 8867485303808952905
+    second: oak_woods_tileset_1184
+  - first:
+      213: -7891866722223100873
+    second: oak_woods_tileset_1185
+  - first:
+      213: -7780118628791888658
+    second: oak_woods_tileset_1186
+  - first:
+      213: 363074317170047674
+    second: oak_woods_tileset_1187
+  - first:
+      213: -3801323236922378665
+    second: oak_woods_tileset_1188
+  - first:
+      213: 9051069807437606736
+    second: oak_woods_tileset_1189
+  - first:
+      213: 6484845600120239094
+    second: oak_woods_tileset_1190
+  - first:
+      213: 9038326485875048095
+    second: oak_woods_tileset_1191
+  - first:
+      213: -4369882424868102774
+    second: oak_woods_tileset_1192
+  - first:
+      213: 7631421444429508996
+    second: oak_woods_tileset_1193
+  - first:
+      213: -1665624395526590122
+    second: oak_woods_tileset_1194
+  - first:
+      213: 7558182843486701307
+    second: oak_woods_tileset_1195
+  - first:
+      213: 5787190826943496181
+    second: oak_woods_tileset_1196
+  - first:
+      213: 6925264593611086387
+    second: oak_woods_tileset_1197
+  - first:
+      213: -2892673915534603227
+    second: oak_woods_tileset_1198
+  - first:
+      213: -8705144367491389791
+    second: oak_woods_tileset_1199
+  - first:
+      213: 4705644036395880581
+    second: oak_woods_tileset_1200
+  - first:
+      213: 6545879366680171976
+    second: oak_woods_tileset_1201
+  - first:
+      213: -7785657276099475717
+    second: oak_woods_tileset_1202
+  - first:
+      213: 7444177812143290813
+    second: oak_woods_tileset_1203
+  - first:
+      213: 5761410865816574752
+    second: oak_woods_tileset_1204
+  - first:
+      213: -6947385476650484359
+    second: oak_woods_tileset_1205
+  - first:
+      213: -7864191764507635112
+    second: oak_woods_tileset_1206
+  - first:
+      213: -498804622940910280
+    second: oak_woods_tileset_1207
+  - first:
+      213: 4560704272988712161
+    second: oak_woods_tileset_1208
+  - first:
+      213: 5264673540512707435
+    second: oak_woods_tileset_1209
+  - first:
+      213: 3453677305503638058
+    second: oak_woods_tileset_1210
+  - first:
+      213: 4379716098355476143
+    second: oak_woods_tileset_1211
+  - first:
+      213: 724461446547103343
+    second: oak_woods_tileset_1212
+  - first:
+      213: 943248395479412185
+    second: oak_woods_tileset_1213
+  - first:
+      213: 8465339753799343374
+    second: oak_woods_tileset_1214
+  - first:
+      213: 7827933488076268385
+    second: oak_woods_tileset_1215
+  - first:
+      213: 8577342018204018778
+    second: oak_woods_tileset_1216
+  - first:
+      213: 3788203546957135884
+    second: oak_woods_tileset_1217
+  - first:
+      213: 5126180154286660358
+    second: oak_woods_tileset_1218
+  - first:
+      213: 7528260105041836569
+    second: oak_woods_tileset_1219
+  - first:
+      213: 398363482003099466
+    second: oak_woods_tileset_1220
+  - first:
+      213: 4681830178775316309
+    second: oak_woods_tileset_1221
+  - first:
+      213: 2513183037553011439
+    second: oak_woods_tileset_1222
+  - first:
+      213: -7947065777858520794
+    second: oak_woods_tileset_1223
+  - first:
+      213: 5300442773959157271
+    second: oak_woods_tileset_1224
+  - first:
+      213: -1433122796102817483
+    second: oak_woods_tileset_1225
+  - first:
+      213: 4190191343010895286
+    second: oak_woods_tileset_1226
+  - first:
+      213: 2326323199622613568
+    second: oak_woods_tileset_1227
+  - first:
+      213: 6334310517547360215
+    second: oak_woods_tileset_1228
+  - first:
+      213: 8505929085392871981
+    second: oak_woods_tileset_1229
+  - first:
+      213: -5350644912942310498
+    second: oak_woods_tileset_1230
+  - first:
+      213: 3135431381948993292
+    second: oak_woods_tileset_1231
+  - first:
+      213: 1872246580240250841
+    second: oak_woods_tileset_1232
+  - first:
+      213: -7970428047217673437
+    second: oak_woods_tileset_1233
+  - first:
+      213: 1973189055295666460
+    second: oak_woods_tileset_1234
+  - first:
+      213: -5867136194299020957
+    second: oak_woods_tileset_1235
+  - first:
+      213: 7274214072173052489
+    second: oak_woods_tileset_1236
+  - first:
+      213: 3677078477092164488
+    second: oak_woods_tileset_1237
+  - first:
+      213: -6911797939262554837
+    second: oak_woods_tileset_1238
+  - first:
+      213: 756104351593008569
+    second: oak_woods_tileset_1239
+  - first:
+      213: -4325583389328489757
+    second: oak_woods_tileset_1240
+  - first:
+      213: -2365193870151962203
+    second: oak_woods_tileset_1241
+  - first:
+      213: 7560391248966282683
+    second: oak_woods_tileset_1242
+  - first:
+      213: -6302999087819808101
+    second: oak_woods_tileset_1243
+  - first:
+      213: 6508684799564907733
+    second: oak_woods_tileset_1244
+  - first:
+      213: -6721657265099850842
+    second: oak_woods_tileset_1245
+  - first:
+      213: 961473306509224830
+    second: oak_woods_tileset_1246
+  - first:
+      213: 7194044714791261128
+    second: oak_woods_tileset_1247
+  - first:
+      213: 4578957294075037943
+    second: oak_woods_tileset_1248
+  - first:
+      213: -311138793247044439
+    second: oak_woods_tileset_1249
+  - first:
+      213: -1273012864242365621
+    second: oak_woods_tileset_1250
+  - first:
+      213: 1171547856750287134
+    second: oak_woods_tileset_1251
+  - first:
+      213: 459337761782913434
+    second: oak_woods_tileset_1252
+  - first:
+      213: -1828373181064653106
+    second: oak_woods_tileset_1253
+  - first:
+      213: -8737157910456933694
+    second: oak_woods_tileset_1254
+  - first:
+      213: -5611671312605260021
+    second: oak_woods_tileset_1255
+  - first:
+      213: 1916389233634429878
+    second: oak_woods_tileset_1256
+  - first:
+      213: -9159562208910870336
+    second: oak_woods_tileset_1257
+  - first:
+      213: -592349080804866848
+    second: oak_woods_tileset_1258
+  - first:
+      213: -4689986120440104153
+    second: oak_woods_tileset_1259
+  - first:
+      213: 7773348614206212607
+    second: oak_woods_tileset_1260
+  - first:
+      213: -6998640662280831291
+    second: oak_woods_tileset_1261
+  - first:
+      213: 1231453827421408393
+    second: oak_woods_tileset_1262
+  - first:
+      213: -3561292428449215842
+    second: oak_woods_tileset_1263
+  - first:
+      213: -6327339960763776963
+    second: oak_woods_tileset_1264
+  - first:
+      213: -825272617236812411
+    second: oak_woods_tileset_1265
+  - first:
+      213: 2997580085028367751
+    second: oak_woods_tileset_1266
+  - first:
+      213: -2038834737019743736
+    second: oak_woods_tileset_1267
+  - first:
+      213: 1281692016525548676
+    second: oak_woods_tileset_1268
+  - first:
+      213: -7680465961677534623
+    second: oak_woods_tileset_1269
+  - first:
+      213: 1493913450056608607
+    second: oak_woods_tileset_1270
+  - first:
+      213: 5415725243075418396
+    second: oak_woods_tileset_1271
+  - first:
+      213: -4701275392709615117
+    second: oak_woods_tileset_1272
+  - first:
+      213: -5910112294717119025
+    second: oak_woods_tileset_1273
+  - first:
+      213: 8090214656717461128
+    second: oak_woods_tileset_1274
+  - first:
+      213: -6011061989062514590
+    second: oak_woods_tileset_1275
+  - first:
+      213: 8124081746898476569
+    second: oak_woods_tileset_1276
+  - first:
+      213: 6569899348403615729
+    second: oak_woods_tileset_1277
+  - first:
+      213: -3712101170411977752
+    second: oak_woods_tileset_1278
+  - first:
+      213: -8128605496412548710
+    second: oak_woods_tileset_1279
+  - first:
+      213: -4257869454358923448
+    second: oak_woods_tileset_1280
+  - first:
+      213: 8249938477966031768
+    second: oak_woods_tileset_1281
+  - first:
+      213: -4234798712656724116
+    second: oak_woods_tileset_1282
+  - first:
+      213: 654945729664217302
+    second: oak_woods_tileset_1283
+  - first:
+      213: 889498135638623321
+    second: oak_woods_tileset_1284
+  - first:
+      213: -2718082286840475670
+    second: oak_woods_tileset_1285
+  - first:
+      213: -3934578994605505136
+    second: oak_woods_tileset_1286
+  - first:
+      213: -760946706755790098
+    second: oak_woods_tileset_1287
+  - first:
+      213: -2282017475310645737
+    second: oak_woods_tileset_1288
+  - first:
+      213: 5836077380654977625
+    second: oak_woods_tileset_1289
+  - first:
+      213: -8226209690245699397
+    second: oak_woods_tileset_1290
+  - first:
+      213: -620311905433337713
+    second: oak_woods_tileset_1291
+  - first:
+      213: 122480565695591652
+    second: oak_woods_tileset_1292
+  - first:
+      213: 7838985991549698103
+    second: oak_woods_tileset_1293
+  - first:
+      213: 7884992170384727649
+    second: oak_woods_tileset_1294
+  - first:
+      213: -1814567966605087584
+    second: oak_woods_tileset_1295
+  - first:
+      213: 3462369178526180735
+    second: oak_woods_tileset_1296
+  - first:
+      213: -5421986010167184732
+    second: oak_woods_tileset_1297
+  - first:
+      213: 6735730560218958438
+    second: oak_woods_tileset_1298
+  - first:
+      213: -9203880807955213767
+    second: oak_woods_tileset_1299
+  - first:
+      213: 9198075406107117880
+    second: oak_woods_tileset_1300
+  - first:
+      213: -7288017963326573650
+    second: oak_woods_tileset_1301
+  - first:
+      213: -737864333135007898
+    second: oak_woods_tileset_1302
+  - first:
+      213: 1362332665075429671
+    second: oak_woods_tileset_1303
+  - first:
+      213: 7261120480576038378
+    second: oak_woods_tileset_1304
+  - first:
+      213: 6791626488213916320
+    second: oak_woods_tileset_1305
+  - first:
+      213: 5104543932952912286
+    second: oak_woods_tileset_1306
+  - first:
+      213: -7255315735427673675
+    second: oak_woods_tileset_1307
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: oak_woods_tileset_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81cd990feefbc77e0800000000000000
+      internalID: -1766325920876340200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 336
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f3f279f533b286c0800000000000000
+      internalID: -4142551662827736079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 336
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fcd768928d27b930800000000000000
+      internalID: 4158842819825884409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 336
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b907cf033375120800000000000000
+      internalID: 2402445211712133950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_4
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 336
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d6b92737a0688a10800000000000000
+      internalID: 1911884313120061145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_5
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 336
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44a238e9999e8f40800000000000000
+      internalID: 5732688261993899084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_6
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 336
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48848850a4ef92db0800000000000000
+      internalID: -4816038732622182268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 336
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ec83d9e5ef4b6f0800000000000000
+      internalID: -669630762253234684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_8
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 336
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45dfcc682d8871770800000000000000
+      internalID: 8581478052763860308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 336
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e350a26e2030eea0800000000000000
+      internalID: -5845619340545600539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_10
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 336
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57fbb4ce949345340800000000000000
+      internalID: 4851565688244649845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_11
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 336
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09cf24f1802697f80800000000000000
+      internalID: -8108341867080123248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 336
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12dd3fddf6dc278b0800000000000000
+      internalID: -5155832743036986079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_13
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 336
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa20cafe801a61e0800000000000000
+      internalID: -2203930861366138201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_14
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 336
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1531a3a6d7a7c9460800000000000000
+      internalID: 7249804179231347537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 336
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3a49b16df2f71a0800000000000000
+      internalID: -6809671514928667676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 312
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6f752b800aec270800000000000000
+      internalID: 8272725524738471605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_17
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 312
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe13089f57faf120800000000000000
+      internalID: 2448541337373580990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_18
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 312
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832b1f335bd89d170800000000000000
+      internalID: 8203744005632143928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_19
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 312
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca9481d04e3eee00800000000000000
+      internalID: 1075865809102084802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_20
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 312
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74195a3dfed04ba0800000000000000
+      internalID: -6106635915527383940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_21
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 312
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7a8e76a4e4a92c0800000000000000
+      internalID: -4424137602460244048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_22
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 312
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0de191ef5b1d100800000000000000
+      internalID: 131085967118225658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_23
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 312
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ab6df2dfac4d850800000000000000
+      internalID: 6400964159178455564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704709342133c4ad0800000000000000
+      internalID: -2716740321675283449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_25
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 288
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45e06d4d06eb57b0800000000000000
+      internalID: -5234337197080910518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_26
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 288
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6c8684276cf34a0800000000000000
+      internalID: -6611347533813201175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_27
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 288
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05ec34e0359de670800000000000000
+      internalID: 8569669703176086794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_28
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 288
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd631ccb7c81c190800000000000000
+      internalID: -7943913804372152907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_29
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 288
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2258e240887d4930800000000000000
+      internalID: 4129088925642281517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_30
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 288
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df116005897051720800000000000000
+      internalID: 2816165492749111805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_31
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 288
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d9925af3381c900800000000000000
+      internalID: 702987326223654204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 264
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f79288468e0c840800000000000000
+      internalID: 5242445484738051919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_33
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 264
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1dbd0e4492c42e0800000000000000
+      internalID: -2140290347100810782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_34
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 264
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6bbfc0d9b6d51b20800000000000000
+      internalID: 3104623611702393707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_35
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 264
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456235fda1b07b530800000000000000
+      internalID: 3870574614792054356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_36
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 264
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6738545e7790a70800000000000000
+      internalID: 8793691574015063724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_37
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 264
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329782f38f0a83ae0800000000000000
+      internalID: -1569327482066667229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_38
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 264
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72d01e9e20b52fe0800000000000000
+      internalID: -1214370810239593859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_39
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 264
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aff6603045f2b150800000000000000
+      internalID: 5887037318965428131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_40
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 264
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ecfbca45902a7e00800000000000000
+      internalID: 1043182089266789601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_41
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 264
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368c8fc993f1ad5d0800000000000000
+      internalID: -3037080666400831389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_42
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 264
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd920cf27d0d8cd00800000000000000
+      internalID: 993273340472863197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_43
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 264
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ad716df916c31b0800000000000000
+      internalID: -5675554091274085775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_44
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 240
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3b14ac50f72afe0800000000000000
+      internalID: -1179240489572781133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_45
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fddc4c1e1a8c360b0800000000000000
+      internalID: -5736520902736818721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 216
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350eead91a7c4c700800000000000000
+      internalID: 559791750649929811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_47
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 216
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c2475636cceb74d0800000000000000
+      internalID: -3135652379474050368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_48
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 216
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165d43be69ec61200800000000000000
+      internalID: 150534785150014817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_49
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 216
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09069cbe3170aaf0800000000000000
+      internalID: -387185053688002292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_50
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 216
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3638726682f6dc760800000000000000
+      internalID: 7479756775435502435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_51
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 216
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c46bc6dd8611d260800000000000000
+      internalID: 7120497284299318470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_52
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 216
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab1c88ba7f149ce0800000000000000
+      internalID: -1399458972262720602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_53
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 216
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05802662674e39940800000000000000
+      internalID: 5301832382446438480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cfb40dfad1a417f0800000000000000
+      internalID: -642710884887248952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_55
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 192
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6c4b1be9d578200800000000000000
+      internalID: 182217246099424964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_56
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 192
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f6c3e0cf1521620800000000000000
+      internalID: 2743345266034503568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_57
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ed390b3a0ff7ea0800000000000000
+      internalID: -5872710803235021302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_58
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e62d3df1cf82d900800000000000000
+      internalID: 707786154790692580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_59
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 192
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c1e6d268cadb880800000000000000
+      internalID: -8593522821665252271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_60
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 192
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b1d628c1f946d70800000000000000
+      internalID: 9035521697208146806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_61
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 192
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f010bf1fb6c51a0800000000000000
+      internalID: -6819457048703332529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_62
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 192
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba943b3b6a38b35e0800000000000000
+      internalID: -1928803263395444309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 168
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5f258fe25e32990800000000000000
+      internalID: -7411828571824261717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_64
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 168
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5266207c538793350800000000000000
+      internalID: 5996956551187949093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_65
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 168
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a86c90fe703bee0800000000000000
+      internalID: -1246643948608910839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_66
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 168
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0a73c2a9021bab0800000000000000
+      internalID: -4994174665238273833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_67
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 168
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf9fe245f337f5b0800000000000000
+      internalID: -5334738105114058835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_68
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 168
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dccbb96eadadf8920800000000000000
+      internalID: 2994852910931360973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_69
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 168
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb4633cc89bb52a0800000000000000
+      internalID: -6747595602462880772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_70
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 168
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae9b77ca70e3a770800000000000000
+      internalID: 8620980929654660776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_71
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 168
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7faf2572a94ea5590800000000000000
+      internalID: -7684578463418483977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_72
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 168
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c17009f51cb3080e0800000000000000
+      internalID: -2269748510476728548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_73
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 168
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7625436cfc9746600800000000000000
+      internalID: 460626995189142119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_74
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 168
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500d264821bd73b80800000000000000
+      internalID: -8415016506141519867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_75
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 168
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5700fff8ee030b0800000000000000
+      internalID: -5750834421926169099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_76
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 988e5e24af05cb910800000000000000
+      internalID: 1854446182364211337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_77
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 144
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce2d860bc03e9380800000000000000
+      internalID: -8962672559874298175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_78
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76216a7a63ff2fd0800000000000000
+      internalID: -2364403640700950918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_79
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 144
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c3c68a9e5763fc0800000000000000
+      internalID: -3515492812702597985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_80
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 144
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d52fbd31f1e9a80800000000000000
+      internalID: -8458288880000279157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_81
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 144
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27478c82b4ae26510800000000000000
+      internalID: 1541051631041803378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_82
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 144
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 112b2c28d59f713d0800000000000000
+      internalID: -3235843627221339631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_83
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 144
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4061b57fe02f2490800000000000000
+      internalID: -7768954619346984885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_84
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 144
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255fa496bef67a720800000000000000
+      internalID: 2857375545464386898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_85
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 144
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abfdf28c5530483c0800000000000000
+      internalID: -4358354872422113350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_86
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 144
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825176c56f70876d0800000000000000
+      internalID: -2992633197694085848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_87
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 144
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b79ad57eee2146f0800000000000000
+      internalID: -702228465178732620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e949672e1d8b78830800000000000000
+      internalID: 4073427599567000734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_89
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 120
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6b9c8b1543d1bd0800000000000000
+      internalID: -2657910679481502046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_90
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 120
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b5e77777e2e16e0800000000000000
+      internalID: -1865002105044051045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_91
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 120
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d15932fdd1b7ef0800000000000000
+      internalID: -109460921728557811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_92
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 120
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7117688cf9dad6220800000000000000
+      internalID: 2480829871526670615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_93
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 120
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3751a2b4a399ffee0800000000000000
+      internalID: -1225092097973283469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_94
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 120
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9507447cbcfd50cf0800000000000000
+      internalID: -286576934953652135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_95
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 120
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff88e6ddf1189090800000000000000
+      internalID: -8027646553857945602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_96
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 120
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c57d674fcd9904e0800000000000000
+      internalID: -2014905844689439288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_97
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6032925cb1363e470800000000000000
+      internalID: 8422684699036033798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_98
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af76c57dd0ad58930800000000000000
+      internalID: 4144958785046996986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_99
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2f1c2f17d1787b0800000000000000
+      internalID: -5222172867671493900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_100
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b07dd8e6e3bcb90800000000000000
+      internalID: -7220608933011453090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_101
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39528df03deb83dc0800000000000000
+      internalID: -3658964883525327469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_102
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecad5afc7ee7a2f80800000000000000
+      internalID: -8130546643177710898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_103
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1825e604d6f40a0800000000000000
+      internalID: -6895172380984704533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_104
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79361e388c96301a0800000000000000
+      internalID: -6844510698746059881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_105
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e36f449456b5eb30800000000000000
+      internalID: 4316056292286227427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_106
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a8a8d864a918440800000000000000
+      internalID: 4936396294387829308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_107
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 904cf4bb40ae01cf0800000000000000
+      internalID: -283469470481005559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0443b58489e113530800000000000000
+      internalID: 3832878397266801728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_109
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 72
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c334a5f969b7650800000000000000
+      internalID: 6231740120555535505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_110
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 72
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a9e514fb8d98d20800000000000000
+      internalID: 3281392119463189012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_111
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 72
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c128ca2c76902c50800000000000000
+      internalID: 6638471310781981121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_112
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 72
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c12f4897a26a870800000000000000
+      internalID: 8693682832095190131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_113
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 72
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c1471a5b90434d0800000000000000
+      internalID: -3155886763177403366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_114
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 72
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d78ae69eca644b0800000000000000
+      internalID: -5456483779928883952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_115
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f67e8dc275d14c0800000000000000
+      internalID: -4315197017821843695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_116
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 48
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaedb643238b989d0800000000000000
+      internalID: -2771481569902469458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_117
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9dfabc6652c2c00800000000000000
+      internalID: 877117150864595450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_118
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 48
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2d9c1aba514b430800000000000000
+      internalID: 3797684212678120184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_119
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 48
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f71c6b2a3386a50800000000000000
+      internalID: 6514513634935275306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 344414814d5d0f770800000000000000
+      internalID: 8642642791840695363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_121
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a6ff028401dba50800000000000000
+      internalID: 6538400135989127795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_122
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1577b07c7abf8a370800000000000000
+      internalID: 8334187808466630481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_123
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a41c5ad9f0ad6cf0800000000000000
+      internalID: -257372608719481689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_124
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593449f3df684e5c0800000000000000
+      internalID: -4187073331296189547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_125
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a72247697bbfe0390800000000000000
+      internalID: -7850060334538415494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_126
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03bf3033efb4f02b0800000000000000
+      internalID: -5616186655158043856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_127
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6602110845b51cff0800000000000000
+      internalID: -17632505048784794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_128
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d0a75447d78a910800000000000000
+      internalID: 1848865585370893660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_129
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d9fbd7dd6a28fa0800000000000000
+      internalID: -5799889899872084600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_130
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb23191a2e31adf0800000000000000
+      internalID: -170786960333132868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_131
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e467cb2618113e0800000000000000
+      internalID: -2084742891427181040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_132
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf2649825eb664d10800000000000000
+      internalID: 2109492107442152187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_133
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf890856a3df42e0800000000000000
+      internalID: -2139258586582642770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_134
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66af4dd6c19cbf450800000000000000
+      internalID: 6123709242279262822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_135
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ad65912037ca100800000000000000
+      internalID: 120597742884412013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_136
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79853f0b8d970180800000000000000
+      internalID: -9149170897398691457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_137
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c9a81f4a0764510800000000000000
+      internalID: 1533036576895572992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_138
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c73da0045271e3e0800000000000000
+      internalID: -2026212652225841209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_139
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab63d223f0c8c33a0800000000000000
+      internalID: -6684313750030436678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_140
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0ffc540b86999d0800000000000000
+      internalID: -2767065389747670807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_141
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc9df781705fbe10800000000000000
+      internalID: 2215577990232644817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_142
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e682496ef40546870800000000000000
+      internalID: 8675147086323525742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_143
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0452497086f8a3200800000000000000
+      internalID: 160598413691594048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_144
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76831f77c099c9e20800000000000000
+      internalID: 3358727700942501991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_145
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694ed2882f97c3630800000000000000
+      internalID: 3908132659224503446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_146
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abbcbd781f8f3a490800000000000000
+      internalID: -7736066018642244678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_147
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 679d6a0e04e72a870800000000000000
+      internalID: 8692649047890516342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_148
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e8f107d24b2fbe0800000000000000
+      internalID: -1444894423184863682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_149
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec2e663553695a20800000000000000
+      internalID: 3051579440156781799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_150
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729d8cc5fb0dab0f0800000000000000
+      internalID: -1100337638624667353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oak_woods_tileset_151
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17174fa5487720c00800000000000000
+      internalID: 865385488753914225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

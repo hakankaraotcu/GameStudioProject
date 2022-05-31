@@ -10,6 +10,10 @@ public class PlayerController : MonoBehaviour
     private Collider2D coll;
     private Image image;
     private int timer;
+    private IInteractable interactable;
+    [SerializeField] private float colliderDistance;
+    [SerializeField] private BoxCollider2D boxCollider;
+    [SerializeField] private float range;
     [SerializeField] private Transform attackPoint;
     [SerializeField] private LayerMask enemyLayers, bossLayers;
     [SerializeField] private LayerMask ground;
@@ -36,13 +40,13 @@ public class PlayerController : MonoBehaviour
     public static PlayerController instance;
     private float rollDir;
     private float dirX;
-    private int playerLayer, platformLayer, enemyLayer, bossLayer;
+    private int playerLayer, platformLayer, enemyLayer, bossLayer, interactableLayer;
     private bool jumpOffCoroutineIsRunning = false;
     private enum State { idle, running, jumping, falling, rolling, climb};
     private State state = State.idle;
 
-    [SerializeField] private HealthBar healthBar;
-    [SerializeField] private StaminaBar staminaBar;
+    public HealthBar healthBar;
+    public StaminaBar staminaBar;
 
     public bool canClimb = false;
     public bool bottomLadder = false;
@@ -51,6 +55,26 @@ public class PlayerController : MonoBehaviour
     public Ladder ladder;
     private float naturalGravity;
     [SerializeField] float climbSpeed = 3f;
+
+    [SerializeField] private GameObject tip, tip1;
+
+    private int jumpCount = 0;
+    public int extraJumps = 1;
+
+    private static PlayerController player;
+
+    private PlayerController()
+    {
+        if (player == null)
+        {
+            player = this;
+        }
+    }
+
+    public static PlayerController GetInstance()
+    {
+        return player;
+    }
 
     private void Awake()
     {
@@ -66,11 +90,12 @@ public class PlayerController : MonoBehaviour
         healthBar.SetMaxHealth(PermanentUI.GetInstance().maxHealth);
         PermanentUI.GetInstance().currentStamina = PermanentUI.GetInstance().maxStamina;
         staminaBar.SetMaxStamina(PermanentUI.GetInstance().maxStamina);
-        PermanentUI.GetInstance().maxHealthPotion = PermanentUI.GetInstance().potions.Length;
+        PermanentUI.GetInstance().maxHealthPotion = 2;
         playerLayer = LayerMask.NameToLayer("Player");
         platformLayer = LayerMask.NameToLayer("Platform");
         enemyLayer = LayerMask.NameToLayer("Enemies");
         bossLayer = LayerMask.NameToLayer("Bosses");
+        interactableLayer = LayerMask.NameToLayer("Interactable");
         naturalGravity = rb.gravityScale;
     }
 
@@ -87,6 +112,7 @@ public class PlayerController : MonoBehaviour
         Attack();
         Block();
         Meditate();
+        Interactable();
 
         AnimState();
         anim.SetInteger("state", (int)state);
@@ -250,14 +276,18 @@ public class PlayerController : MonoBehaviour
             {
                 dashDirection = rollDir;
             }
+            boxCollider.offset = new Vector3(0.003989443f, -0.3499389f, 1);
+            boxCollider.size = new Vector3(0.1551138f, 0.06578049f, 1);
+            print(boxCollider.bounds);
             Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, true);
             Physics2D.IgnoreLayerCollision(playerLayer, bossLayer, true);
         }
-        if (Input.GetButtonDown("Jump") && ((coll.IsTouchingLayers(ground) || isDashing) || (coll.IsTouchingLayers(platform) || isDashing)) && !Input.GetKey(KeyCode.S))
+        if (Input.GetButtonDown("Jump") && ((((coll.IsTouchingLayers(ground) || isDashing) || (coll.IsTouchingLayers(platform) || isDashing))) || jumpCount < extraJumps) && !Input.GetKey(KeyCode.S))
         {
             Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
             Physics2D.IgnoreLayerCollision(playerLayer, bossLayer, false);
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            jumpCount++;
             state = State.jumping;
             isDashing = false;
         }
@@ -290,7 +320,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             canClimb = false;
-            rb.gravityScale = naturalGravity;
+            rb.gravityScale = 3;
             state = State.jumping;
             checkLadder = false;
             isDashing = false;
@@ -306,7 +336,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             canClimb = false;
-            rb.gravityScale = naturalGravity;
+            rb.gravityScale = 3;
             state = State.jumping;
             checkLadder = false;
             isDashing = false;
@@ -328,7 +358,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             canClimb = false;
-            rb.gravityScale = naturalGravity;
+            rb.gravityScale = 3;
             state = State.jumping;
             checkLadder = false;
             isDashing = false;
@@ -369,6 +399,78 @@ public class PlayerController : MonoBehaviour
                 Destroy(collision.gameObject);
                 PermanentUI.GetInstance().potions[PermanentUI.GetInstance().healthPotion].gameObject.SetActive(true);
                 PermanentUI.GetInstance().healthPotion += 1;
+            }
+        }
+        if(collision.tag == "Interactable")
+        {
+            interactable = collision.GetComponent<IInteractable>();
+        }
+        if (collision.tag == "Shop")
+        {
+            interactable = collision.GetComponent<IInteractable>();
+            tip.gameObject.SetActive(true);
+        }
+        if (collision.tag == "God")
+        {
+            interactable = collision.GetComponent<IInteractable>();
+            tip1.gameObject.SetActive(true);
+        }
+        if (collision.tag == "Checkpoint")
+        {
+            interactable = collision.GetComponent<IInteractable>();
+        }
+        if (collision.tag == "Secret")
+        {
+            interactable = collision.GetComponent<IInteractable>();
+        }
+        if (collision.tag == "Trap")
+        {
+            PlayerRespawn.GetInstance().Respawn();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.tag == "Interactable")
+        {
+            if(interactable != null)
+            {
+                interactable.StopInteract();
+                interactable = null;
+            }
+        }
+        if (collision.tag == "Shop")
+        {
+            if (interactable != null)
+            {
+                interactable.StopInteract();
+                interactable = null;
+                tip.gameObject.SetActive(false);
+            }
+        }
+        if (collision.tag == "God")
+        {
+            if (interactable != null)
+            {
+                interactable.StopInteract();
+                interactable = null;
+                tip1.gameObject.SetActive(false);
+            }
+        }
+        if (collision.tag == "Checkpoint")
+        {
+            if (interactable != null)
+            {
+                interactable.StopInteract();
+                interactable = null;
+            }
+        }
+        if (collision.tag == "Secret")
+        {
+            if (interactable != null)
+            {
+                interactable.StopInteract();
+                interactable = null;
             }
         }
     }
@@ -433,18 +535,24 @@ public class PlayerController : MonoBehaviour
                 if(rb.velocity.y < .1f)
                 {
                     state = State.falling;
+                    boxCollider.offset = new Vector3(0.003989443f, -0.1246257f, 1);
+                    boxCollider.size = new Vector3(0.1551138f, 0.5164068f, 1);
                     Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
                     Physics2D.IgnoreLayerCollision(playerLayer, bossLayer, false);
                 }
                 else if(dirX != 0)
                 {
                     state = State.running;
+                    boxCollider.offset = new Vector3(0.003989443f, -0.1246257f, 1);
+                    boxCollider.size = new Vector3(0.1551138f, 0.5164068f, 1);
                     Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
                     Physics2D.IgnoreLayerCollision(playerLayer, bossLayer, false);
                 }
                 else
                 {
                     state = State.idle;
+                    boxCollider.offset = new Vector3(0.003989443f, -0.1246257f, 1);
+                    boxCollider.size = new Vector3(0.1551138f, 0.5164068f, 1);
                     Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
                     Physics2D.IgnoreLayerCollision(playerLayer, bossLayer, false);
                 }
@@ -456,6 +564,7 @@ public class PlayerController : MonoBehaviour
             if (coll.IsTouchingLayers(ground) || coll.IsTouchingLayers(platform))
             {
                 state = State.idle;
+                jumpCount = 0;
             }
         }
         else if (Mathf.Abs(rb.velocity.x) > 1f && (coll.IsTouchingLayers(ground) || coll.IsTouchingLayers(platform)))
@@ -472,6 +581,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             state = State.idle;
+            canMove = true;
         }
     }
 
@@ -520,7 +630,6 @@ public class PlayerController : MonoBehaviour
     {
         if (!isBlocking)
         {
-            print("haha");
             canMove = true;
             getDamage = damage;
             PermanentUI.GetInstance().currentHealth -= getDamage;
@@ -568,11 +677,40 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void Interactable()
+    {
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            RaycastHit2D hit = Physics2D.Raycast(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
+                       new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y));
+
+            if(hit.collider.tag == "Interactable" || hit.collider.tag == "God" || hit.collider.tag == "Shop" || hit.collider.tag == "Checkpoint" || hit.collider.tag == "Confiner" || hit.collider.tag == "Secret")
+            {
+                Interact();
+            }
+        }
+    }
+
+    public void Interact()
+    {
+        if(interactable != null)
+        {
+            interactable.Interact();
+        }
+    }
+
     public void Die()
     {
         anim.SetBool("isDead", true);
-        PermanentUI.GetInstance().LoseExperience();
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         GetComponent<Collider2D>().enabled = false;
+        PlayerRespawn.GetInstance().Respawn();
+        PermanentUI.GetInstance().LoseExperience(250);
+    }
+
+    public void OnDrawGizmos()
+    {
+        Gizmos.DrawWireCube(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
+                       new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y));
     }
 }

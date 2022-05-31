@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7583140851331850661}
   - component: {fileID: 7321605105636374457}
-  - component: {fileID: 6901555743919926390}
+  - component: {fileID: 7691519715593186047}
   m_Layer: 0
   m_Name: Gate
   m_TagString: Untagged
@@ -45,7 +45,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.49736786, y: -0.2763157}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -56,9 +56,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.7421036, y: 4.9421005}
   m_EdgeRadius: 0
---- !u!114 &6901555743919926390
+--- !u!114 &7691519715593186047
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8996364901850170212}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b88883ef33766943bd3390f2c57767f, type: 3}
+  m_Script: {fileID: 11500000, guid: 670ceed9de5744549bcfd2ce492ede89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 
+  targetArea: {fileID: 0}

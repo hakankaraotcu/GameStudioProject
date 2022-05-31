@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 7217991120405855478}
   - component: {fileID: 7217991120405855477}
   - component: {fileID: 7217991120405855476}
+  - component: {fileID: 1904688121}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -59,8 +60,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7217991120405855474}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.05, y: 1.66, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 0}
+  m_LocalPosition: {x: -174.73, y: -2.83, z: 0}
+  m_LocalScale: {x: -3, y: 3, z: 0}
   m_Children:
   - {fileID: 7217991119174606465}
   m_Father: {fileID: 0}
@@ -178,6 +179,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 7217991120405855476}
   enemyAnim: {fileID: 0}
+  colliderDistance: 0.115
+  boxCollider: {fileID: 7217991120405855479}
+  range: 2
   attackPoint: {fileID: 7217991119174606465}
   enemyLayers:
     serializedVersion: 2
@@ -217,6 +221,9 @@ MonoBehaviour:
   checkLadder: 0
   ladder: {fileID: 0}
   climbSpeed: 3
+  tip: {fileID: 0}
+  tip1: {fileID: 0}
+  extraJumps: 1
 --- !u!95 &7217991120405855476
 Animator:
   serializedVersion: 3
@@ -236,3 +243,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1904688121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7217991120405855474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d59e3102e705e0e4780e45cf5c49e868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

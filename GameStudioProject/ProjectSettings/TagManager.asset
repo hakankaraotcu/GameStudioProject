@@ -7,6 +7,14 @@ TagManager:
   - Collectible
   - Enemy
   - Platform
+  - Interactable
+  - God
+  - Shop
+  - Confiner
+  - Checkpoint
+  - Secret
+  - Trap
+  - Teleport
   layers:
   - Default
   - TransparentFX
@@ -19,7 +27,7 @@ TagManager:
   - Platform
   - Portal
   - Bosses
-  - 
+  - Interactable
   - 
   - 
   - 

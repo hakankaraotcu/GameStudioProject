@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Boss : Bosses
 {
-    public int maxhealth = 400;
+    public int maxHealth = 400;
     [SerializeField] private int currentHealth;
     [SerializeField] private float wayPointLeft;
     [SerializeField] private float wayPointRight;
@@ -13,22 +13,29 @@ public class Boss : Bosses
     [SerializeField] private LayerMask enemyLayers;
 
     public Transform followArea;
-    private bool facingLeft = true;
+
+    [SerializeField] private HealthBar healthBar;
 
     // Start is called before the first frame update
     protected override void Start()
     {
         base.Start();
-        currentHealth = maxhealth;
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(currentHealth <= 500)
+        {
+            attackRate = 0.6f;
+        }
         Collider2D[] followEnemies = Physics2D.OverlapCircleAll(followArea.position, followRange, enemyLayers);
 
         if (followEnemies.Length == 1)
         {
+            healthBar.gameObject.SetActive(true);
             if (TargetInDistance() && followEnabled)
             {
                 PathFollow();
@@ -41,6 +48,7 @@ public class Boss : Bosses
         if (!isAttacking)
         {
             currentHealth -= damage;
+            healthBar.SetHealth(currentHealth);
 
             anim.SetTrigger("hurt");
 
@@ -54,6 +62,9 @@ public class Boss : Bosses
     public void Die()
     {
         anim.SetBool("isDead", true);
+        healthBar.gameObject.SetActive(false);
+        PermanentUI.GetInstance().exp += 1000;
+        PermanentUI.GetInstance().GainExperience();
 
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         GetComponent<Collider2D>().enabled = false;

@@ -213,7 +213,7 @@ MonoBehaviour:
     m_Bits: 8
   damage: 50
   attackRate: 0.4
-  maxhealth: 750
+  maxHealth: 400
   currentHealth: 0
   wayPointLeft: 19.98
   wayPointRight: 30.04
@@ -223,6 +223,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   followArea: {fileID: 8077746764854743524}
+  healthBar: {fileID: 0}
 --- !u!114 &8077746765456255489
 MonoBehaviour:
   m_ObjectHideFlags: 0
